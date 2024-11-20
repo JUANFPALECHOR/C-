@@ -182,6 +182,18 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /home/juan/Documentos/C-/src/controllers/../models/Cliente.h \
  /home/juan/Documentos/C-/src/controllers/ProveedorController.h \
  /home/juan/Documentos/C-/src/controllers/../models/Proveedor.h \
+ /home/juan/Documentos/C-/src/controllers/StockController.h \
+ /home/juan/Documentos/C-/src/models/Stock.h \
+ /home/juan/Documentos/C-/src/controllers/FacturaController.h \
+ /home/juan/Documentos/C-/src/models/Factura.h \
+ /home/juan/Documentos/C-/src/models/DetalleFactura.h \
+ /home/juan/Documentos/C-/src/controllers/StockController.h \
+ /home/juan/Documentos/C-/src/controllers/ReporteController.h \
+ /home/juan/Documentos/C-/src/controllers/FacturaController.h \
+ /home/juan/Documentos/C-/src/controllers/ClienteController.h \
+ /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
+ /home/juan/Documentos/C-/src/controllers/ProductoController.h \
+ /home/juan/Documentos/C-/src/controllers/MarcaController.h \
  /home/juan/Documentos/C-/src/utils/IDGenerator.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \

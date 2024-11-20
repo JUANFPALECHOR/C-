@@ -153,10 +153,24 @@ CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/controllers/ProveedorController.cpp -o CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.s
 
+CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Documentos/C-/src/controllers/ReporteController.cpp
+CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o -MF CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o.d -o CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o -c /home/juan/Documentos/C-/src/controllers/ReporteController.cpp
+
+CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/controllers/ReporteController.cpp > CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.i
+
+CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/controllers/ReporteController.cpp -o CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.s
+
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: /home/juan/Documentos/C-/src/controllers/StockController.cpp
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o -MF CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o.d -o CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o -c /home/juan/Documentos/C-/src/controllers/StockController.cpp
 
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/main.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/main.cpp.o: /home/juan/Documentos/C-/src/main.cpp
 CMakeFiles/MyProject.dir/src/main.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MyProject.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyProject.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/main.cpp.o -MF CMakeFiles/MyProject.dir/src/main.cpp.o.d -o CMakeFiles/MyProject.dir/src/main.cpp.o -c /home/juan/Documentos/C-/src/main.cpp
 
 CMakeFiles/MyProject.dir/src/main.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/MyProject.dir/src/main.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o: /home/juan/Documentos/C-/src/models/Cliente.cpp
 CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o -c /home/juan/Documentos/C-/src/models/Cliente.cpp
 
 CMakeFiles/MyProject.dir/src/models/Cliente.cpp.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/MyProject.dir/src/models/Cliente.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o: /home/juan/Documentos/C-/src/models/DetalleFactura.cpp
 CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o -MF CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.o -c /home/juan/Documentos/C-/src/models/DetalleFactura.cpp
 
 CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/MyProject.dir/src/models/DetalleFactura.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o: /home/juan/Documentos/C-/src/models/Empleado.cpp
 CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o -c /home/juan/Documentos/C-/src/models/Empleado.cpp
 
 CMakeFiles/MyProject.dir/src/models/Empleado.cpp.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/MyProject.dir/src/models/Empleado.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Factura.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Factura.cpp.o: /home/juan/Documentos/C-/src/models/Factura.cpp
 CMakeFiles/MyProject.dir/src/models/Factura.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MyProject.dir/src/models/Factura.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyProject.dir/src/models/Factura.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Factura.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Factura.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Factura.cpp.o -c /home/juan/Documentos/C-/src/models/Factura.cpp
 
 CMakeFiles/MyProject.dir/src/models/Factura.cpp.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/MyProject.dir/src/models/Factura.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Marca.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Marca.cpp.o: /home/juan/Documentos/C-/src/models/Marca.cpp
 CMakeFiles/MyProject.dir/src/models/Marca.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/MyProject.dir/src/models/Marca.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyProject.dir/src/models/Marca.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Marca.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Marca.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Marca.cpp.o -c /home/juan/Documentos/C-/src/models/Marca.cpp
 
 CMakeFiles/MyProject.dir/src/models/Marca.cpp.i: cmake_force
@@ -254,7 +268,7 @@ CMakeFiles/MyProject.dir/src/models/Marca.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Persona.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Persona.cpp.o: /home/juan/Documentos/C-/src/models/Persona.cpp
 CMakeFiles/MyProject.dir/src/models/Persona.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/MyProject.dir/src/models/Persona.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyProject.dir/src/models/Persona.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Persona.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Persona.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Persona.cpp.o -c /home/juan/Documentos/C-/src/models/Persona.cpp
 
 CMakeFiles/MyProject.dir/src/models/Persona.cpp.i: cmake_force
@@ -268,7 +282,7 @@ CMakeFiles/MyProject.dir/src/models/Persona.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Producto.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Producto.cpp.o: /home/juan/Documentos/C-/src/models/Producto.cpp
 CMakeFiles/MyProject.dir/src/models/Producto.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/MyProject.dir/src/models/Producto.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyProject.dir/src/models/Producto.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Producto.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Producto.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Producto.cpp.o -c /home/juan/Documentos/C-/src/models/Producto.cpp
 
 CMakeFiles/MyProject.dir/src/models/Producto.cpp.i: cmake_force
@@ -282,7 +296,7 @@ CMakeFiles/MyProject.dir/src/models/Producto.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o: /home/juan/Documentos/C-/src/models/Proveedor.cpp
 CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o -c /home/juan/Documentos/C-/src/models/Proveedor.cpp
 
 CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.i: cmake_force
@@ -296,7 +310,7 @@ CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/models/Stock.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/models/Stock.cpp.o: /home/juan/Documentos/C-/src/models/Stock.cpp
 CMakeFiles/MyProject.dir/src/models/Stock.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/MyProject.dir/src/models/Stock.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyProject.dir/src/models/Stock.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/models/Stock.cpp.o -MF CMakeFiles/MyProject.dir/src/models/Stock.cpp.o.d -o CMakeFiles/MyProject.dir/src/models/Stock.cpp.o -c /home/juan/Documentos/C-/src/models/Stock.cpp
 
 CMakeFiles/MyProject.dir/src/models/Stock.cpp.i: cmake_force
@@ -310,7 +324,7 @@ CMakeFiles/MyProject.dir/src/models/Stock.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o: /home/juan/Documentos/C-/src/utils/IDGenerator.cpp
 CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o -MF CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o.d -o CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o -c /home/juan/Documentos/C-/src/utils/IDGenerator.cpp
 
 CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.i: cmake_force
@@ -324,7 +338,7 @@ CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.s: cmake_force
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src/utils/Validator.cpp
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o -MF CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o.d -o CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o -c /home/juan/Documentos/C-/src/utils/Validator.cpp
 
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.i: cmake_force
@@ -343,6 +357,7 @@ MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o" \
 "CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.o" \
 "CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o" \
+"CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o" \
 "CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o" \
 "CMakeFiles/MyProject.dir/src/main.cpp.o" \
 "CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o" \
@@ -366,6 +381,7 @@ MyProject: CMakeFiles/MyProject.dir/src/controllers/FacturaController.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/main.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o
@@ -381,7 +397,7 @@ MyProject: CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

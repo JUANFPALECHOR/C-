@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o"
   "CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o.d"
+  "CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o"
+  "CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o"
   "CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/main.cpp.o"

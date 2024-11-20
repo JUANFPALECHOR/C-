@@ -273,6 +273,30 @@ src/controllers/ProveedorController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.s
 .PHONY : src/controllers/ProveedorController.cpp.s
 
+src/controllers/ReporteController.o: src/controllers/ReporteController.cpp.o
+.PHONY : src/controllers/ReporteController.o
+
+# target to build an object file
+src/controllers/ReporteController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o
+.PHONY : src/controllers/ReporteController.cpp.o
+
+src/controllers/ReporteController.i: src/controllers/ReporteController.cpp.i
+.PHONY : src/controllers/ReporteController.i
+
+# target to preprocess a source file
+src/controllers/ReporteController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.i
+.PHONY : src/controllers/ReporteController.cpp.i
+
+src/controllers/ReporteController.s: src/controllers/ReporteController.cpp.s
+.PHONY : src/controllers/ReporteController.s
+
+# target to generate assembly for a file
+src/controllers/ReporteController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.s
+.PHONY : src/controllers/ReporteController.cpp.s
+
 src/controllers/StockController.o: src/controllers/StockController.cpp.o
 .PHONY : src/controllers/StockController.o
 
@@ -612,6 +636,9 @@ help:
 	@echo "... src/controllers/ProveedorController.o"
 	@echo "... src/controllers/ProveedorController.i"
 	@echo "... src/controllers/ProveedorController.s"
+	@echo "... src/controllers/ReporteController.o"
+	@echo "... src/controllers/ReporteController.i"
+	@echo "... src/controllers/ReporteController.s"
 	@echo "... src/controllers/StockController.o"
 	@echo "... src/controllers/StockController.i"
 	@echo "... src/controllers/StockController.s"

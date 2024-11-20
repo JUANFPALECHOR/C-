@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/juan/Documentos/C-/src/controllers/MarcaController.cpp" "CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o.d"
   "/home/juan/Documentos/C-/src/controllers/ProductoController.cpp" "CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.o.d"
   "/home/juan/Documentos/C-/src/controllers/ProveedorController.cpp" "CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o.d"
+  "/home/juan/Documentos/C-/src/controllers/ReporteController.cpp" "CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o.d"
   "/home/juan/Documentos/C-/src/controllers/StockController.cpp" "CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o.d"
   "/home/juan/Documentos/C-/src/main.cpp" "CMakeFiles/MyProject.dir/src/main.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/main.cpp.o.d"
   "/home/juan/Documentos/C-/src/models/Cliente.cpp" "CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/models/Cliente.cpp.o.d"
