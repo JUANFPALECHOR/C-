@@ -1,0 +1,3 @@
+/home/juan/Documentos/C-/build/CMakeFiles/MyProject.dir
+/home/juan/Documentos/C-/build/CMakeFiles/edit_cache.dir
+/home/juan/Documentos/C-/build/CMakeFiles/rebuild_cache.dir

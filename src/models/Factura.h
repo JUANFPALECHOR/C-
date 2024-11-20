@@ -82,7 +82,7 @@ public:
     void setIdProveedor(int id);
 
     // Obtiene la lista de detalles de la factura
-    std::vector<DetalleFactura>& getDetalles();
+    const std::vector<DetalleFactura>& getDetalles() const;
 
     // Añade un nuevo detalle a la factura
     // Parámetros:

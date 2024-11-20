@@ -95,9 +95,10 @@ void Factura::setIdProveedor(int id) {
 
 // Método para obtener la lista de detalles de la factura
 // Retorna una referencia al vector de DetalleFactura
-std::vector<DetalleFactura>& Factura::getDetalles() {
+const std::vector<DetalleFactura>& Factura::getDetalles() const {
     return detalles;
 }
+
 
 // Método para añadir un nuevo detalle a la factura
 // Parámetros:
