@@ -1,5 +1,5 @@
 CMakeFiles/MyProject.dir/src/main.cpp.o: \
- /home/juan/Documentos/c++/src/main.cpp /usr/include/stdc-predef.h \
+ /home/juan/Documentos/C-/src/main.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -149,8 +149,16 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/limits \
+ /home/juan/Documentos/C-/src/controllers/ProductoController.h \
+ /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
+ /usr/include/c++/13/bits/stl_vector.h \
+ /usr/include/c++/13/bits/stl_bvector.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/juan/Documentos/C-/src/models/Producto.h \
+ /home/juan/Documentos/C-/src/controllers/MarcaController.h \
+ /home/juan/Documentos/C-/src/models/Marca.h \
+ /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -168,31 +176,13 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/c++/src/controllers/ProductoController.h \
- /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc \
- /home/juan/Documentos/c++/src/models/Producto.h \
- /home/juan/Documentos/c++/src/controllers/MarcaController.h \
- /home/juan/Documentos/c++/src/models/Marca.h \
- /home/juan/Documentos/c++/src/controllers/EmpleadoController.h \
- /home/juan/Documentos/c++/src/controllers/PersonaController.h \
- /home/juan/Documentos/c++/src/models/Persona.h \
- /home/juan/Documentos/c++/src/models/Empleado.h \
- /home/juan/Documentos/c++/src/models/Persona.h \
- /home/juan/Documentos/c++/src/controllers/ClienteController.h \
- /home/juan/Documentos/c++/src/models/Cliente.h \
- /home/juan/Documentos/c++/src/controllers/ProveedorController.h \
- /home/juan/Documentos/c++/src/models/Proveedor.h \
- /home/juan/Documentos/c++/src/controllers/FacturaController.h \
- /home/juan/Documentos/c++/src/models/Factura.h \
- /home/juan/Documentos/c++/src/models/DetalleFactura.h \
- /home/juan/Documentos/c++/src/models/FacturaCompra.h \
- /home/juan/Documentos/c++/src/models/Factura.h \
- /home/juan/Documentos/c++/src/controllers/StockController.h \
- /home/juan/Documentos/c++/src/models/Stock.h \
- /home/juan/Documentos/c++/src/models/FacturaVenta.h \
- /home/juan/Documentos/c++/src/utils/IDGenerator.h \
+ /home/juan/Documentos/C-/src/controllers/../models/Empleado.h \
+ /home/juan/Documentos/C-/src/controllers/../models/Persona.h \
+ /home/juan/Documentos/C-/src/controllers/ClienteController.h \
+ /home/juan/Documentos/C-/src/controllers/../models/Cliente.h \
+ /home/juan/Documentos/C-/src/controllers/ProveedorController.h \
+ /home/juan/Documentos/C-/src/controllers/../models/Proveedor.h \
+ /home/juan/Documentos/C-/src/utils/IDGenerator.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -200,16 +190,13 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/juan/Documentos/c++/src/models/Producto.h \
- /home/juan/Documentos/c++/src/models/Marca.h \
- /home/juan/Documentos/c++/src/models/Empleado.h \
- /home/juan/Documentos/c++/src/models/Cliente.h \
- /home/juan/Documentos/c++/src/models/Proveedor.h \
- /home/juan/Documentos/c++/src/models/FacturaCompra.h \
- /home/juan/Documentos/c++/src/models/FacturaVenta.h \
- /home/juan/Documentos/c++/src/utils/Validator.h \
- /usr/include/c++/13/regex /usr/include/c++/13/bitset \
- /usr/include/c++/13/locale \
+ /home/juan/Documentos/C-/src/models/Producto.h \
+ /home/juan/Documentos/C-/src/models/Marca.h \
+ /home/juan/Documentos/C-/src/models/Empleado.h \
+ /home/juan/Documentos/C-/src/models/Cliente.h \
+ /home/juan/Documentos/C-/src/models/Proveedor.h \
+ /home/juan/Documentos/C-/src/utils/Validator.h /usr/include/c++/13/regex \
+ /usr/include/c++/13/bitset /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
@@ -235,7 +222,4 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/regex_compiler.tcc \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
- /usr/include/c++/13/bits/regex_executor.tcc \
- /home/juan/Documentos/c++/src/models/Stock.h \
- /home/juan/Documentos/c++/src/controllers/StockController.h \
- /home/juan/Documentos/c++/src/utils/Validator.h
+ /usr/include/c++/13/bits/regex_executor.tcc

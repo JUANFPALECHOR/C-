@@ -1,7 +1,7 @@
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: \
- /home/juan/Documentos/c++/src/controllers/StockController.cpp \
+ /home/juan/Documentos/C-/src/controllers/StockController.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/c++/src/controllers/StockController.h \
+ /home/juan/Documentos/C-/src/controllers/StockController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -52,4 +52,4 @@ CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/juan/Documentos/c++/src/models/Stock.h
+ /home/juan/Documentos/C-/src/models/Stock.h

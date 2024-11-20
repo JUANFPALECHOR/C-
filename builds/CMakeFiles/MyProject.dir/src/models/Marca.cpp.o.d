@@ -1,7 +1,7 @@
 CMakeFiles/MyProject.dir/src/models/Marca.cpp.o: \
- /home/juan/Documentos/c++/src/models/Marca.cpp \
- /usr/include/stdc-predef.h /home/juan/Documentos/c++/src/models/Marca.h \
- /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
+ /home/juan/Documentos/C-/src/models/Marca.cpp /usr/include/stdc-predef.h \
+ /home/juan/Documentos/C-/src/models/Marca.h /usr/include/c++/13/string \
+ /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

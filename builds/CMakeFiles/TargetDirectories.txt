@@ -1,3 +1,3 @@
-/home/juan/Documentos/c++/builds/CMakeFiles/MyProject.dir
-/home/juan/Documentos/c++/builds/CMakeFiles/edit_cache.dir
-/home/juan/Documentos/c++/builds/CMakeFiles/rebuild_cache.dir
+/home/juan/Documentos/C-/builds/CMakeFiles/MyProject.dir
+/home/juan/Documentos/C-/builds/CMakeFiles/edit_cache.dir
+/home/juan/Documentos/C-/builds/CMakeFiles/rebuild_cache.dir

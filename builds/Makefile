@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/juan/Documentos/c++
+CMAKE_SOURCE_DIR = /home/juan/Documentos/C-
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/juan/Documentos/c++/builds
+CMAKE_BINARY_DIR = /home/juan/Documentos/C-/builds
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Documentos/c++/builds/CMakeFiles /home/juan/Documentos/c++/builds//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Documentos/C-/builds/CMakeFiles /home/juan/Documentos/C-/builds//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Documentos/c++/builds/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/juan/Documentos/C-/builds/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ MyProject: cmake_check_build_system
 MyProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/build
 .PHONY : MyProject/fast
+
+src/controllers/ClienteController.o: src/controllers/ClienteController.cpp.o
+.PHONY : src/controllers/ClienteController.o
+
+# target to build an object file
+src/controllers/ClienteController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ClienteController.cpp.o
+.PHONY : src/controllers/ClienteController.cpp.o
+
+src/controllers/ClienteController.i: src/controllers/ClienteController.cpp.i
+.PHONY : src/controllers/ClienteController.i
+
+# target to preprocess a source file
+src/controllers/ClienteController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ClienteController.cpp.i
+.PHONY : src/controllers/ClienteController.cpp.i
+
+src/controllers/ClienteController.s: src/controllers/ClienteController.cpp.s
+.PHONY : src/controllers/ClienteController.s
+
+# target to generate assembly for a file
+src/controllers/ClienteController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ClienteController.cpp.s
+.PHONY : src/controllers/ClienteController.cpp.s
+
+src/controllers/EmpleadoController.o: src/controllers/EmpleadoController.cpp.o
+.PHONY : src/controllers/EmpleadoController.o
+
+# target to build an object file
+src/controllers/EmpleadoController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/EmpleadoController.cpp.o
+.PHONY : src/controllers/EmpleadoController.cpp.o
+
+src/controllers/EmpleadoController.i: src/controllers/EmpleadoController.cpp.i
+.PHONY : src/controllers/EmpleadoController.i
+
+# target to preprocess a source file
+src/controllers/EmpleadoController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/EmpleadoController.cpp.i
+.PHONY : src/controllers/EmpleadoController.cpp.i
+
+src/controllers/EmpleadoController.s: src/controllers/EmpleadoController.cpp.s
+.PHONY : src/controllers/EmpleadoController.s
+
+# target to generate assembly for a file
+src/controllers/EmpleadoController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/EmpleadoController.cpp.s
+.PHONY : src/controllers/EmpleadoController.cpp.s
 
 src/controllers/FacturaController.o: src/controllers/FacturaController.cpp.o
 .PHONY : src/controllers/FacturaController.o
@@ -200,6 +248,30 @@ src/controllers/ProductoController.s: src/controllers/ProductoController.cpp.s
 src/controllers/ProductoController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ProductoController.cpp.s
 .PHONY : src/controllers/ProductoController.cpp.s
+
+src/controllers/ProveedorController.o: src/controllers/ProveedorController.cpp.o
+.PHONY : src/controllers/ProveedorController.o
+
+# target to build an object file
+src/controllers/ProveedorController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o
+.PHONY : src/controllers/ProveedorController.cpp.o
+
+src/controllers/ProveedorController.i: src/controllers/ProveedorController.cpp.i
+.PHONY : src/controllers/ProveedorController.i
+
+# target to preprocess a source file
+src/controllers/ProveedorController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.i
+.PHONY : src/controllers/ProveedorController.cpp.i
+
+src/controllers/ProveedorController.s: src/controllers/ProveedorController.cpp.s
+.PHONY : src/controllers/ProveedorController.s
+
+# target to generate assembly for a file
+src/controllers/ProveedorController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.s
+.PHONY : src/controllers/ProveedorController.cpp.s
 
 src/controllers/StockController.o: src/controllers/StockController.cpp.o
 .PHONY : src/controllers/StockController.o
@@ -369,6 +441,30 @@ src/models/Marca.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/models/Marca.cpp.s
 .PHONY : src/models/Marca.cpp.s
 
+src/models/Persona.o: src/models/Persona.cpp.o
+.PHONY : src/models/Persona.o
+
+# target to build an object file
+src/models/Persona.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/models/Persona.cpp.o
+.PHONY : src/models/Persona.cpp.o
+
+src/models/Persona.i: src/models/Persona.cpp.i
+.PHONY : src/models/Persona.i
+
+# target to preprocess a source file
+src/models/Persona.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/models/Persona.cpp.i
+.PHONY : src/models/Persona.cpp.i
+
+src/models/Persona.s: src/models/Persona.cpp.s
+.PHONY : src/models/Persona.s
+
+# target to generate assembly for a file
+src/models/Persona.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/models/Persona.cpp.s
+.PHONY : src/models/Persona.cpp.s
+
 src/models/Producto.o: src/models/Producto.cpp.o
 .PHONY : src/models/Producto.o
 
@@ -498,6 +594,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... MyProject"
+	@echo "... src/controllers/ClienteController.o"
+	@echo "... src/controllers/ClienteController.i"
+	@echo "... src/controllers/ClienteController.s"
+	@echo "... src/controllers/EmpleadoController.o"
+	@echo "... src/controllers/EmpleadoController.i"
+	@echo "... src/controllers/EmpleadoController.s"
 	@echo "... src/controllers/FacturaController.o"
 	@echo "... src/controllers/FacturaController.i"
 	@echo "... src/controllers/FacturaController.s"
@@ -507,6 +609,9 @@ help:
 	@echo "... src/controllers/ProductoController.o"
 	@echo "... src/controllers/ProductoController.i"
 	@echo "... src/controllers/ProductoController.s"
+	@echo "... src/controllers/ProveedorController.o"
+	@echo "... src/controllers/ProveedorController.i"
+	@echo "... src/controllers/ProveedorController.s"
 	@echo "... src/controllers/StockController.o"
 	@echo "... src/controllers/StockController.i"
 	@echo "... src/controllers/StockController.s"
@@ -528,6 +633,9 @@ help:
 	@echo "... src/models/Marca.o"
 	@echo "... src/models/Marca.i"
 	@echo "... src/models/Marca.s"
+	@echo "... src/models/Persona.o"
+	@echo "... src/models/Persona.i"
+	@echo "... src/models/Persona.s"
 	@echo "... src/models/Producto.o"
 	@echo "... src/models/Producto.i"
 	@echo "... src/models/Producto.s"

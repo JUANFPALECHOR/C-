@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/juan/Documentos/c++/src/controllers -I/home/juan/Documentos/c++/src/models -I/home/juan/Documentos/c++/src/utils
+CXX_INCLUDES = -I/home/juan/Documentos/C-/src/controllers -I/home/juan/Documentos/C-/src/models -I/home/juan/Documentos/C-/src/utils
 
 CXX_FLAGS = -std=gnu++17
 
