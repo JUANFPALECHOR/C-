@@ -1,7 +1,8 @@
-CMakeFiles/MyProject.dir/src/controllers/FacturaController.cpp.o: \
- /home/juan/Documentos/C-/src/controllers/FacturaController.cpp \
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
+ /home/juan/Documentos/C-/src/views/FacturaView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/controllers/FacturaController.h \
+ /home/juan/Documentos/C-/src/views/FacturaView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/FacturaController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -156,14 +157,12 @@ CMakeFiles/MyProject.dir/src/controllers/FacturaController.cpp.o: \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
  /home/juan/Documentos/C-/src/models/DetalleFactura.h \
- /home/juan/Documentos/C-/src/controllers/StockController.h \
+ /home/juan/Documentos/C-/src/views/../controllers/StockController.h \
  /home/juan/Documentos/C-/src/models/Stock.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/sstream /usr/include/c++/13/istream \
+ /home/juan/Documentos/C-/src/views/../controllers/EmpleadoController.h \
+ /home/juan/Documentos/C-/src/views/../controllers/../models/Empleado.h \
+ /home/juan/Documentos/C-/src/views/../controllers/../models/Persona.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
@@ -178,12 +177,18 @@ CMakeFiles/MyProject.dir/src/controllers/FacturaController.cpp.o: \
  /usr/include/c++/13/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
  /usr/include/c++/13/bits/locale_facets.tcc \
- /usr/include/c++/13/bits/basic_ios.tcc /usr/include/c++/13/ostream \
- /usr/include/c++/13/bits/ostream.tcc \
+ /usr/include/c++/13/bits/basic_ios.tcc \
+ /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /usr/include/c++/13/bits/sstream.tcc /usr/include/c++/13/map \
- /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/iostream
+ /home/juan/Documentos/C-/src/views/../controllers/ClienteController.h \
+ /home/juan/Documentos/C-/src/views/../controllers/../models/Cliente.h \
+ /home/juan/Documentos/C-/src/views/../controllers/ProveedorController.h \
+ /home/juan/Documentos/C-/src/views/../controllers/../models/Proveedor.h \
+ /home/juan/Documentos/C-/src/views/../controllers/ProductoController.h \
+ /home/juan/Documentos/C-/src/models/Producto.h \
+ /home/juan/Documentos/C-/src/utils/Utils.h /usr/include/c++/13/limits \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h

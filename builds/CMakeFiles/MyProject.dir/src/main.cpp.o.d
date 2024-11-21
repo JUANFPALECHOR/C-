@@ -189,17 +189,16 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /home/juan/Documentos/C-/src/models/DetalleFactura.h \
  /home/juan/Documentos/C-/src/controllers/StockController.h \
  /home/juan/Documentos/C-/src/controllers/ReporteController.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h \
  /home/juan/Documentos/C-/src/controllers/FacturaController.h \
  /home/juan/Documentos/C-/src/controllers/ClienteController.h \
  /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
  /home/juan/Documentos/C-/src/controllers/ProductoController.h \
  /home/juan/Documentos/C-/src/controllers/MarcaController.h \
- /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/stl_map.h \
- /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/utility \
- /usr/include/c++/13/bits/stl_relops.h \
  /home/juan/Documentos/C-/src/utils/IDGenerator.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
@@ -237,4 +236,19 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/regex_compiler.tcc \
  /usr/include/c++/13/bits/regex.h /usr/include/c++/13/bits/regex.tcc \
  /usr/include/c++/13/bits/regex_executor.h \
- /usr/include/c++/13/bits/regex_executor.tcc
+ /usr/include/c++/13/bits/regex_executor.tcc \
+ /home/juan/Documentos/C-/src/views/MarcaView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/MarcaController.h \
+ /home/juan/Documentos/C-/src/views/../utils/Validator.h \
+ /home/juan/Documentos/C-/src/views/ProductoView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/ProductoController.h \
+ /home/juan/Documentos/C-/src/views/EmpleadoView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/EmpleadoController.h \
+ /home/juan/Documentos/C-/src/views/ClienteView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/ClienteController.h \
+ /home/juan/Documentos/C-/src/views/ProveedorView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/ProveedorController.h \
+ /home/juan/Documentos/C-/src/views/StockView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/StockController.h \
+ /home/juan/Documentos/C-/src/views/FacturaView.h \
+ /home/juan/Documentos/C-/src/views/../controllers/FacturaController.h

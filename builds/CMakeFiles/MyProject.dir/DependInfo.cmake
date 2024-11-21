@@ -27,7 +27,15 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/juan/Documentos/C-/src/models/Proveedor.cpp" "CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o.d"
   "/home/juan/Documentos/C-/src/models/Stock.cpp" "CMakeFiles/MyProject.dir/src/models/Stock.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/models/Stock.cpp.o.d"
   "/home/juan/Documentos/C-/src/utils/IDGenerator.cpp" "CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o.d"
+  "/home/juan/Documentos/C-/src/utils/Utils.cpp" "CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o.d"
   "/home/juan/Documentos/C-/src/utils/Validator.cpp" "CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/ClienteView.cpp" "CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/EmpleadoView.cpp" "CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/FacturaView.cpp" "CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/MarcaView.cpp" "CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/ProductoView.cpp" "CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/ProveedorView.cpp" "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/StockView.cpp" "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -335,10 +335,24 @@ CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/utils/IDGenerator.cpp -o CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.s
 
+CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o: /home/juan/Documentos/C-/src/utils/Utils.cpp
+CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o -MF CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o.d -o CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o -c /home/juan/Documentos/C-/src/utils/Utils.cpp
+
+CMakeFiles/MyProject.dir/src/utils/Utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/utils/Utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/utils/Utils.cpp > CMakeFiles/MyProject.dir/src/utils/Utils.cpp.i
+
+CMakeFiles/MyProject.dir/src/utils/Utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/utils/Utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/utils/Utils.cpp -o CMakeFiles/MyProject.dir/src/utils/Utils.cpp.s
+
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: CMakeFiles/MyProject.dir/flags.make
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src/utils/Validator.cpp
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o -MF CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o.d -o CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o -c /home/juan/Documentos/C-/src/utils/Validator.cpp
 
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.i: cmake_force
@@ -348,6 +362,104 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.i: cmake_force
 CMakeFiles/MyProject.dir/src/utils/Validator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/utils/Validator.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/utils/Validator.cpp -o CMakeFiles/MyProject.dir/src/utils/Validator.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o: /home/juan/Documentos/C-/src/views/ClienteView.cpp
+CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o -c /home/juan/Documentos/C-/src/views/ClienteView.cpp
+
+CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/ClienteView.cpp > CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/ClienteView.cpp -o CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: /home/juan/Documentos/C-/src/views/EmpleadoView.cpp
+CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o -c /home/juan/Documentos/C-/src/views/EmpleadoView.cpp
+
+CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/EmpleadoView.cpp > CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/EmpleadoView.cpp -o CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/src/views/FacturaView.cpp
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o -c /home/juan/Documentos/C-/src/views/FacturaView.cpp
+
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/FacturaView.cpp > CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/FacturaView.cpp -o CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: /home/juan/Documentos/C-/src/views/MarcaView.cpp
+CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o -c /home/juan/Documentos/C-/src/views/MarcaView.cpp
+
+CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/MarcaView.cpp > CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/MarcaView.cpp -o CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: /home/juan/Documentos/C-/src/views/ProductoView.cpp
+CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o -c /home/juan/Documentos/C-/src/views/ProductoView.cpp
+
+CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/ProductoView.cpp > CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/ProductoView.cpp -o CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o: /home/juan/Documentos/C-/src/views/ProveedorView.cpp
+CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o -c /home/juan/Documentos/C-/src/views/ProveedorView.cpp
+
+CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/ProveedorView.cpp > CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/ProveedorView.cpp -o CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.s
+
+CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: CMakeFiles/MyProject.dir/flags.make
+CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: /home/juan/Documentos/C-/src/views/StockView.cpp
+CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: CMakeFiles/MyProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/MyProject.dir/src/views/StockView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MyProject.dir/src/views/StockView.cpp.o -MF CMakeFiles/MyProject.dir/src/views/StockView.cpp.o.d -o CMakeFiles/MyProject.dir/src/views/StockView.cpp.o -c /home/juan/Documentos/C-/src/views/StockView.cpp
+
+CMakeFiles/MyProject.dir/src/views/StockView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MyProject.dir/src/views/StockView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juan/Documentos/C-/src/views/StockView.cpp > CMakeFiles/MyProject.dir/src/views/StockView.cpp.i
+
+CMakeFiles/MyProject.dir/src/views/StockView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MyProject.dir/src/views/StockView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juan/Documentos/C-/src/views/StockView.cpp -o CMakeFiles/MyProject.dir/src/views/StockView.cpp.s
 
 # Object files for target MyProject
 MyProject_OBJECTS = \
@@ -370,7 +482,15 @@ MyProject_OBJECTS = \
 "CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o" \
 "CMakeFiles/MyProject.dir/src/models/Stock.cpp.o" \
 "CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o" \
-"CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o"
+"CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o" \
+"CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o" \
+"CMakeFiles/MyProject.dir/src/views/StockView.cpp.o"
 
 # External object files for target MyProject
 MyProject_EXTERNAL_OBJECTS =
@@ -394,10 +514,18 @@ MyProject: CMakeFiles/MyProject.dir/src/models/Producto.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/models/Proveedor.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/models/Stock.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o
 MyProject: CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o
+MyProject: CMakeFiles/MyProject.dir/src/views/StockView.cpp.o
 MyProject: CMakeFiles/MyProject.dir/build.make
 MyProject: CMakeFiles/MyProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable MyProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juan/Documentos/C-/builds/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking CXX executable MyProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MyProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

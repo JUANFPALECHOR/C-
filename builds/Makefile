@@ -585,6 +585,30 @@ src/utils/IDGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/utils/IDGenerator.cpp.s
 .PHONY : src/utils/IDGenerator.cpp.s
 
+src/utils/Utils.o: src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.o
+
+# target to build an object file
+src/utils/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o
+.PHONY : src/utils/Utils.cpp.o
+
+src/utils/Utils.i: src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.i
+
+# target to preprocess a source file
+src/utils/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/utils/Utils.cpp.i
+.PHONY : src/utils/Utils.cpp.i
+
+src/utils/Utils.s: src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.s
+
+# target to generate assembly for a file
+src/utils/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/utils/Utils.cpp.s
+.PHONY : src/utils/Utils.cpp.s
+
 src/utils/Validator.o: src/utils/Validator.cpp.o
 .PHONY : src/utils/Validator.o
 
@@ -608,6 +632,174 @@ src/utils/Validator.s: src/utils/Validator.cpp.s
 src/utils/Validator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/utils/Validator.cpp.s
 .PHONY : src/utils/Validator.cpp.s
+
+src/views/ClienteView.o: src/views/ClienteView.cpp.o
+.PHONY : src/views/ClienteView.o
+
+# target to build an object file
+src/views/ClienteView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.o
+.PHONY : src/views/ClienteView.cpp.o
+
+src/views/ClienteView.i: src/views/ClienteView.cpp.i
+.PHONY : src/views/ClienteView.i
+
+# target to preprocess a source file
+src/views/ClienteView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.i
+.PHONY : src/views/ClienteView.cpp.i
+
+src/views/ClienteView.s: src/views/ClienteView.cpp.s
+.PHONY : src/views/ClienteView.s
+
+# target to generate assembly for a file
+src/views/ClienteView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ClienteView.cpp.s
+.PHONY : src/views/ClienteView.cpp.s
+
+src/views/EmpleadoView.o: src/views/EmpleadoView.cpp.o
+.PHONY : src/views/EmpleadoView.o
+
+# target to build an object file
+src/views/EmpleadoView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o
+.PHONY : src/views/EmpleadoView.cpp.o
+
+src/views/EmpleadoView.i: src/views/EmpleadoView.cpp.i
+.PHONY : src/views/EmpleadoView.i
+
+# target to preprocess a source file
+src/views/EmpleadoView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.i
+.PHONY : src/views/EmpleadoView.cpp.i
+
+src/views/EmpleadoView.s: src/views/EmpleadoView.cpp.s
+.PHONY : src/views/EmpleadoView.s
+
+# target to generate assembly for a file
+src/views/EmpleadoView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.s
+.PHONY : src/views/EmpleadoView.cpp.s
+
+src/views/FacturaView.o: src/views/FacturaView.cpp.o
+.PHONY : src/views/FacturaView.o
+
+# target to build an object file
+src/views/FacturaView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o
+.PHONY : src/views/FacturaView.cpp.o
+
+src/views/FacturaView.i: src/views/FacturaView.cpp.i
+.PHONY : src/views/FacturaView.i
+
+# target to preprocess a source file
+src/views/FacturaView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.i
+.PHONY : src/views/FacturaView.cpp.i
+
+src/views/FacturaView.s: src/views/FacturaView.cpp.s
+.PHONY : src/views/FacturaView.s
+
+# target to generate assembly for a file
+src/views/FacturaView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.s
+.PHONY : src/views/FacturaView.cpp.s
+
+src/views/MarcaView.o: src/views/MarcaView.cpp.o
+.PHONY : src/views/MarcaView.o
+
+# target to build an object file
+src/views/MarcaView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o
+.PHONY : src/views/MarcaView.cpp.o
+
+src/views/MarcaView.i: src/views/MarcaView.cpp.i
+.PHONY : src/views/MarcaView.i
+
+# target to preprocess a source file
+src/views/MarcaView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.i
+.PHONY : src/views/MarcaView.cpp.i
+
+src/views/MarcaView.s: src/views/MarcaView.cpp.s
+.PHONY : src/views/MarcaView.s
+
+# target to generate assembly for a file
+src/views/MarcaView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.s
+.PHONY : src/views/MarcaView.cpp.s
+
+src/views/ProductoView.o: src/views/ProductoView.cpp.o
+.PHONY : src/views/ProductoView.o
+
+# target to build an object file
+src/views/ProductoView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o
+.PHONY : src/views/ProductoView.cpp.o
+
+src/views/ProductoView.i: src/views/ProductoView.cpp.i
+.PHONY : src/views/ProductoView.i
+
+# target to preprocess a source file
+src/views/ProductoView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.i
+.PHONY : src/views/ProductoView.cpp.i
+
+src/views/ProductoView.s: src/views/ProductoView.cpp.s
+.PHONY : src/views/ProductoView.s
+
+# target to generate assembly for a file
+src/views/ProductoView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.s
+.PHONY : src/views/ProductoView.cpp.s
+
+src/views/ProveedorView.o: src/views/ProveedorView.cpp.o
+.PHONY : src/views/ProveedorView.o
+
+# target to build an object file
+src/views/ProveedorView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o
+.PHONY : src/views/ProveedorView.cpp.o
+
+src/views/ProveedorView.i: src/views/ProveedorView.cpp.i
+.PHONY : src/views/ProveedorView.i
+
+# target to preprocess a source file
+src/views/ProveedorView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.i
+.PHONY : src/views/ProveedorView.cpp.i
+
+src/views/ProveedorView.s: src/views/ProveedorView.cpp.s
+.PHONY : src/views/ProveedorView.s
+
+# target to generate assembly for a file
+src/views/ProveedorView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.s
+.PHONY : src/views/ProveedorView.cpp.s
+
+src/views/StockView.o: src/views/StockView.cpp.o
+.PHONY : src/views/StockView.o
+
+# target to build an object file
+src/views/StockView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/StockView.cpp.o
+.PHONY : src/views/StockView.cpp.o
+
+src/views/StockView.i: src/views/StockView.cpp.i
+.PHONY : src/views/StockView.i
+
+# target to preprocess a source file
+src/views/StockView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/StockView.cpp.i
+.PHONY : src/views/StockView.cpp.i
+
+src/views/StockView.s: src/views/StockView.cpp.s
+.PHONY : src/views/StockView.s
+
+# target to generate assembly for a file
+src/views/StockView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/StockView.cpp.s
+.PHONY : src/views/StockView.cpp.s
 
 # Help Target
 help:
@@ -675,9 +867,33 @@ help:
 	@echo "... src/utils/IDGenerator.o"
 	@echo "... src/utils/IDGenerator.i"
 	@echo "... src/utils/IDGenerator.s"
+	@echo "... src/utils/Utils.o"
+	@echo "... src/utils/Utils.i"
+	@echo "... src/utils/Utils.s"
 	@echo "... src/utils/Validator.o"
 	@echo "... src/utils/Validator.i"
 	@echo "... src/utils/Validator.s"
+	@echo "... src/views/ClienteView.o"
+	@echo "... src/views/ClienteView.i"
+	@echo "... src/views/ClienteView.s"
+	@echo "... src/views/EmpleadoView.o"
+	@echo "... src/views/EmpleadoView.i"
+	@echo "... src/views/EmpleadoView.s"
+	@echo "... src/views/FacturaView.o"
+	@echo "... src/views/FacturaView.i"
+	@echo "... src/views/FacturaView.s"
+	@echo "... src/views/MarcaView.o"
+	@echo "... src/views/MarcaView.i"
+	@echo "... src/views/MarcaView.s"
+	@echo "... src/views/ProductoView.o"
+	@echo "... src/views/ProductoView.i"
+	@echo "... src/views/ProductoView.s"
+	@echo "... src/views/ProveedorView.o"
+	@echo "... src/views/ProveedorView.i"
+	@echo "... src/views/ProveedorView.s"
+	@echo "... src/views/StockView.o"
+	@echo "... src/views/StockView.i"
+	@echo "... src/views/StockView.s"
 .PHONY : help
 
 
