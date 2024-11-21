@@ -194,14 +194,18 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
  /home/juan/Documentos/C-/src/controllers/ProductoController.h \
  /home/juan/Documentos/C-/src/controllers/MarcaController.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/bits/node_handle.h \
+ /usr/include/c++/13/bits/stl_map.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/utility \
+ /usr/include/c++/13/bits/stl_relops.h \
  /home/juan/Documentos/C-/src/utils/IDGenerator.h \
  /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
  /usr/include/c++/13/bits/hashtable_policy.h \
  /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h \
  /home/juan/Documentos/C-/src/models/Producto.h \
  /home/juan/Documentos/C-/src/models/Marca.h \
  /home/juan/Documentos/C-/src/models/Empleado.h \
@@ -223,7 +227,6 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tree.h /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/regex_constants.h \
  /usr/include/c++/13/bits/regex_error.h \
  /usr/include/c++/13/bits/regex_automaton.h \

@@ -1152,9 +1152,11 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/c++/13/algorithm \
   /usr/include/c++/13/backward/auto_ptr.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
   /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
   /usr/include/c++/13/bits/allocated_ptr.h \
@@ -1204,10 +1206,12 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
   /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
@@ -1215,6 +1219,7 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
@@ -1223,6 +1228,7 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
@@ -1256,6 +1262,7 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
   /usr/include/c++/13/stdexcept \
@@ -1266,6 +1273,7 @@ CMakeFiles/MyProject.dir/src/controllers/ReporteController.cpp.o: /home/juan/Doc
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -1622,8 +1630,10 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: /home/juan/Documentos/C-/src/main.cpp \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
   /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
   /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_tree.h \
@@ -1668,6 +1678,7 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: /home/juan/Documentos/C-/src/main.cpp \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/new \
   /usr/include/c++/13/ostream \
@@ -1686,6 +1697,7 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: /home/juan/Documentos/C-/src/main.cpp \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
@@ -3450,8 +3462,6 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/libintl.h:
 
-/usr/include/c++/13/stack:
-
 /usr/include/c++/13/locale:
 
 /usr/include/c++/13/deque:
@@ -3464,15 +3474,23 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/c++/13/bits/stl_stack.h:
 
-/usr/include/c++/13/bits/stl_heap.h:
-
 /usr/include/c++/13/bits/stl_deque.h:
-
-/usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/bits/regex_constants.h:
+
+/usr/include/c++/13/bits/regex_automaton.tcc:
+
+/usr/include/c++/13/bits/regex.tcc:
+
+/usr/include/c++/13/bits/regex.h:
+
+/home/juan/Documentos/C-/src/models/Stock.cpp:
+
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
 
 /usr/include/pthread.h:
 
@@ -3489,6 +3507,10 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 /usr/include/c++/13/system_error:
 
 /usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/bits/regex_automaton.h:
+
+/usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -3526,6 +3548,8 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/c++/13/ext/concurrence.h:
 
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/13/cctype:
 
 /home/juan/Documentos/C-/src/utils/IDGenerator.cpp:
@@ -3551,6 +3575,8 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 /home/juan/Documentos/C-/src/models/Stock.h:
 
 /usr/include/c++/13/cstddef:
+
+/usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/clocale:
 
@@ -3650,8 +3676,6 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/c++/13/bits/regex.tcc:
-
 /home/juan/Documentos/C-/src/models/DetalleFactura.h:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
@@ -3732,9 +3756,9 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/c++/13/bits/exception_ptr.h:
 
-/usr/include/c++/13/pstl/pstl_config.h:
+/usr/include/c++/13/bits/locale_conv.h:
 
-/usr/include/c++/13/bits/regex_automaton.h:
+/usr/include/c++/13/bits/istream.tcc:
 
 /usr/include/c++/13/bits/regex_executor.h:
 
@@ -3828,9 +3852,9 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/13/bits/uniform_int_dist.h:
-
 /home/juan/Documentos/C-/src/models/Proveedor.h:
+
+/usr/include/c++/13/bits/uniform_int_dist.h:
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
@@ -3872,8 +3896,6 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/usr/include/c++/13/bits/regex_automaton.tcc:
-
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
@@ -3905,6 +3927,10 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/usr/include/c++/13/stack:
+
+/usr/include/c++/13/bits/stl_relops.h:
 
 /usr/include/c++/13/sstream:
 
@@ -3996,9 +4022,19 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /home/juan/Documentos/C-/src/controllers/ReporteController.h:
 
+/usr/include/c++/13/algorithm:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/13/bits/node_handle.h:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/usr/include/c++/13/utility:
 
 /home/juan/Documentos/C-/src/controllers/StockController.cpp:
 
@@ -4006,22 +4042,6 @@ CMakeFiles/MyProject.dir/src/utils/Validator.cpp.o: /home/juan/Documentos/C-/src
 
 /home/juan/Documentos/C-/src/utils/Validator.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/c++/13/bits/istream.tcc:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/usr/include/c++/13/bits/locale_facets_nonio.h:
-
-/home/juan/Documentos/C-/src/models/Stock.cpp:
-
-/usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/13/bits/regex.h:
