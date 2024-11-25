@@ -1,10 +1,9 @@
-// StockController.cpp
 #include "StockController.h"
 
-bool StockController::agregarStock(const Stock& stock) {
+bool StockController::agregarStock(const std::shared_ptr<Stock>& stock) {
     // Verificar si el IDProducto ya existe
     for (const auto& s : stocks) {
-        if (s.getIdProducto() == stock.getIdProducto()) {
+        if (s->getIdProducto() == stock->getIdProducto()) {
             return false; // IDProducto duplicado
         }
     }
@@ -12,17 +11,17 @@ bool StockController::agregarStock(const Stock& stock) {
     return true;
 }
 
-Stock* StockController::obtenerStockPorIdProducto(int idProducto) {
-    for (auto& s : stocks) {
-        if (s.getIdProducto() == idProducto) {
-            return &s;
+std::shared_ptr<Stock> StockController::obtenerStockPorIdProducto(int idProducto) const {
+    for (const auto& s : stocks) {
+        if (s->getIdProducto() == idProducto) {
+            return s;
         }
     }
-    return nullptr;
+    return nullptr; // No encontrado
 }
 
 bool StockController::aumentarStock(int idProducto, int cantidad) {
-    Stock* stock = obtenerStockPorIdProducto(idProducto);
+    auto stock = obtenerStockPorIdProducto(idProducto);
     if (stock) {
         stock->setExistencias(stock->getExistencias() + cantidad);
         return true;
@@ -31,7 +30,7 @@ bool StockController::aumentarStock(int idProducto, int cantidad) {
 }
 
 bool StockController::reducirStock(int idProducto, int cantidad) {
-    Stock* stock = obtenerStockPorIdProducto(idProducto);
+    auto stock = obtenerStockPorIdProducto(idProducto);
     if (stock && stock->getExistencias() >= cantidad) {
         stock->setExistencias(stock->getExistencias() - cantidad);
         return true;
@@ -39,6 +38,10 @@ bool StockController::reducirStock(int idProducto, int cantidad) {
     return false;
 }
 
-std::vector<Stock> StockController::listarStocks() const {
+
+
+std::vector<std::shared_ptr<Stock>> StockController::listarStocks() const {
     return stocks;
+
+
 }

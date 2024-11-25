@@ -4,6 +4,7 @@
 
 #include <vector>
 #include "Producto.h"
+#include <memory>
 
 class ProductoController {
 private:
@@ -24,6 +25,8 @@ public:
 
     // Listar todos los Productos
     std::vector<Producto> listarProductos() const;
+
+    std::vector<Producto> obtenerProductosPorMarca(int idMarca) const;
 };
 
 #endif // PRODUCTOCONTROLLER_H

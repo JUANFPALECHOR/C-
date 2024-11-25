@@ -1,27 +1,30 @@
-// StockController.h
+
 #ifndef STOCKCONTROLLER_H
 #define STOCKCONTROLLER_H
 
 #include <vector>
+#include <memory>
 #include "Stock.h"
 
 class StockController {
 private:
-    std::vector<Stock> stocks;
+    std::vector<std::shared_ptr<Stock>> stocks;
 
 public:
-    // Agregar Stock
-    bool agregarStock(const Stock& stock);
+    // Agregar un nuevo registro de stock
+    bool agregarStock(const std::shared_ptr<Stock>& stock);
 
-    // Obtener Stock por IDProducto
-    Stock* obtenerStockPorIdProducto(int idProducto);
+    // Obtener un registro de stock por ID del producto
+    std::shared_ptr<Stock> obtenerStockPorIdProducto(int idProducto) const;
 
-    // Actualizar existencias
+    // Aumentar existencias de un producto en el inventario
     bool aumentarStock(int idProducto, int cantidad);
+
+    // Reducir existencias de un producto en el inventario
     bool reducirStock(int idProducto, int cantidad);
 
-    // Listar todos los Stocks
-    std::vector<Stock> listarStocks() const;
+    // Listar todos los registros de stock
+    std::vector<std::shared_ptr<Stock>> listarStocks() const;
 };
 
 #endif // STOCKCONTROLLER_H

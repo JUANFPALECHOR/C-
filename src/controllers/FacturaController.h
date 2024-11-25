@@ -1,28 +1,38 @@
-// FacturaController.h
 #ifndef FACTURACONTROLLER_H
 #define FACTURACONTROLLER_H
 
 #include <vector>
+#include <memory>
 #include "Factura.h"
 #include "StockController.h"
 
 class FacturaController {
 private:
-    std::vector<Factura> facturas;
-    StockController& stockController; // Referencia al controlador de Stock
+    std::vector<std::shared_ptr<Factura>> facturas;
+    StockController& stockController;
 
 public:
-    // Constructor que recibe una referencia al controlador de Stock
+    // Constructor
     FacturaController(StockController& stockCtrl);
 
-    // Agregar Factura
-    bool agregarFactura(const Factura& factura);
+    // Crear Factura de Venta
+    bool crearFacturaVenta(const std::shared_ptr<Factura>& factura);
+
+    // Crear Factura de Compra
+    bool crearFacturaCompra(const std::shared_ptr<Factura>& factura);
 
     // Obtener Factura por ID
-    Factura* obtenerFacturaPorId(int id);
+    std::shared_ptr<Factura> obtenerFacturaPorId(int id);
 
     // Listar todas las Facturas
-    std::vector<Factura> listarFacturas() const;
+    std::vector<std::shared_ptr<Factura>> listarFacturas() const;
+
+    // Generar el siguiente ID de Factura
+    int generarSiguienteId() const;
+
+    // Métodos de reporte
+    double calcularTotalVentasMensuales(int mes, int año) const;
+    std::vector<std::pair<int, double>> obtenerVentasPorMes(int año) const;
 };
 
 #endif // FACTURACONTROLLER_H

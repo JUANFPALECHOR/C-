@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(${PROJECT_SOURCE_DIR}/src/controllers)
 include_directories(${PROJECT_SOURCE_DIR}/src/models)
 include_directories(${PROJECT_SOURCE_DIR}/src/utils)
+include_directories(${PROJECT_SOURCE_DIR}/src/views)
 
 # Agregar todos los archivos fuente
 file(GLOB SOURCES
@@ -17,6 +18,8 @@ file(GLOB SOURCES
     ${PROJECT_SOURCE_DIR}/src/models/*.cpp
     ${PROJECT_SOURCE_DIR}/src/utils/*.cpp
     ${PROJECT_SOURCE_DIR}/src/main.cpp
+    ${PROJECT_SOURCE_DIR}/src/views/*.cpp
+    
 )
 
 # Crear el ejecutable
