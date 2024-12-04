@@ -1652,6 +1652,7 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: /home/juan/Documentos/C-/src/main.cpp \
   /home/juan/Documentos/C-/src/views/MarcaView.h \
   /home/juan/Documentos/C-/src/views/ProductoView.h \
   /home/juan/Documentos/C-/src/views/ProveedorView.h \
+  /home/juan/Documentos/C-/src/views/ReporteView.h \
   /home/juan/Documentos/C-/src/views/StockView.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -5552,8 +5553,6 @@ CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: /home/juan/Documentos/C-/src
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/home/juan/Documentos/C-/src/views/ReporteView.h:
-
 /home/juan/Documentos/C-/src/views/ReporteView.cpp:
 
 /home/juan/Documentos/C-/src/views/ProveedorView.cpp:
@@ -5619,6 +5618,8 @@ CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: /home/juan/Documentos/C-/src
 /home/juan/Documentos/C-/src/models/Empleado.cpp:
 
 /usr/include/c++/13/bits/deque.tcc:
+
+/home/juan/Documentos/C-/src/views/ReporteView.h:
 
 /home/juan/Documentos/C-/src/models/Proveedor.cpp:
 
