@@ -155,9 +155,6 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
  /home/juan/Documentos/C-/src/models/Producto.h \
- /home/juan/Documentos/C-/src/controllers/MarcaController.h \
- /home/juan/Documentos/C-/src/models/Marca.h \
- /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
@@ -176,6 +173,9 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
+ /home/juan/Documentos/C-/src/controllers/MarcaController.h \
+ /home/juan/Documentos/C-/src/models/Marca.h \
+ /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
  /home/juan/Documentos/C-/src/controllers/../models/Empleado.h \
  /home/juan/Documentos/C-/src/controllers/../models/Persona.h \
  /home/juan/Documentos/C-/src/controllers/ClienteController.h \
@@ -251,4 +251,8 @@ CMakeFiles/MyProject.dir/src/main.cpp.o: \
  /home/juan/Documentos/C-/src/views/StockView.h \
  /home/juan/Documentos/C-/src/views/../controllers/StockController.h \
  /home/juan/Documentos/C-/src/views/FacturaView.h \
- /home/juan/Documentos/C-/src/views/../controllers/FacturaController.h
+ /home/juan/Documentos/C-/src/views/../controllers/FacturaController.h \
+ /home/juan/Documentos/C-/src/views/ReporteView.h \
+ /home/juan/Documentos/C-/src/controllers/ReporteController.h \
+ /home/juan/Documentos/C-/src/controllers/MarcaController.h \
+ /home/juan/Documentos/C-/src/controllers/ProductoController.h

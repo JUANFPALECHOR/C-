@@ -53,6 +53,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o"
   "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o.d"
+  "CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o"
+  "CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o.d"
   "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o"
   "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o.d"
   "MyProject"

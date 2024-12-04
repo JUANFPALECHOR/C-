@@ -777,6 +777,30 @@ src/views/ProveedorView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.s
 .PHONY : src/views/ProveedorView.cpp.s
 
+src/views/ReporteView.o: src/views/ReporteView.cpp.o
+.PHONY : src/views/ReporteView.o
+
+# target to build an object file
+src/views/ReporteView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o
+.PHONY : src/views/ReporteView.cpp.o
+
+src/views/ReporteView.i: src/views/ReporteView.cpp.i
+.PHONY : src/views/ReporteView.i
+
+# target to preprocess a source file
+src/views/ReporteView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.i
+.PHONY : src/views/ReporteView.cpp.i
+
+src/views/ReporteView.s: src/views/ReporteView.cpp.s
+.PHONY : src/views/ReporteView.s
+
+# target to generate assembly for a file
+src/views/ReporteView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MyProject.dir/build.make CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.s
+.PHONY : src/views/ReporteView.cpp.s
+
 src/views/StockView.o: src/views/StockView.cpp.o
 .PHONY : src/views/StockView.o
 
@@ -891,6 +915,9 @@ help:
 	@echo "... src/views/ProveedorView.o"
 	@echo "... src/views/ProveedorView.i"
 	@echo "... src/views/ProveedorView.s"
+	@echo "... src/views/ReporteView.o"
+	@echo "... src/views/ReporteView.i"
+	@echo "... src/views/ReporteView.s"
 	@echo "... src/views/StockView.o"
 	@echo "... src/views/StockView.i"
 	@echo "... src/views/StockView.s"

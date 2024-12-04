@@ -35,6 +35,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/juan/Documentos/C-/src/views/MarcaView.cpp" "CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o.d"
   "/home/juan/Documentos/C-/src/views/ProductoView.cpp" "CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o.d"
   "/home/juan/Documentos/C-/src/views/ProveedorView.cpp" "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ProveedorView.cpp.o.d"
+  "/home/juan/Documentos/C-/src/views/ReporteView.cpp" "CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o.d"
   "/home/juan/Documentos/C-/src/views/StockView.cpp" "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o" "gcc" "CMakeFiles/MyProject.dir/src/views/StockView.cpp.o.d"
   )
 
