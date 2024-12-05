@@ -4184,6 +4184,7 @@ CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: /home/juan/Documentos/C-/
 CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/src/views/FacturaView.cpp \
   /home/juan/Documentos/C-/src/models/DetalleFactura.h \
   /home/juan/Documentos/C-/src/models/Factura.h \
+  /home/juan/Documentos/C-/src/models/Marca.h \
   /home/juan/Documentos/C-/src/models/Producto.h \
   /home/juan/Documentos/C-/src/models/Stock.h \
   /home/juan/Documentos/C-/src/utils/Utils.h \
@@ -4194,6 +4195,7 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/s
   /home/juan/Documentos/C-/src/controllers/ClienteController.h \
   /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
   /home/juan/Documentos/C-/src/controllers/FacturaController.h \
+  /home/juan/Documentos/C-/src/controllers/MarcaController.h \
   /home/juan/Documentos/C-/src/controllers/ProductoController.h \
   /home/juan/Documentos/C-/src/controllers/ProveedorController.h \
   /home/juan/Documentos/C-/src/controllers/StockController.h \
@@ -4222,12 +4224,16 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/s
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -4241,6 +4247,7 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/s
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/postypes.h \
@@ -4273,6 +4280,7 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/s
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -4316,6 +4324,7 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: /home/juan/Documentos/C-/s
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
