@@ -1,6 +1,7 @@
 CMakeFiles/MyProject.dir/src/models/Factura.cpp.o: \
- /home/juan/Documentos/C-/src/models/Factura.cpp \
- /usr/include/stdc-predef.h /home/juan/Documentos/C-/src/models/Factura.h \
+ /home/juan/Documentos/c++/src/models/Factura.cpp \
+ /usr/include/stdc-predef.h \
+ /home/juan/Documentos/c++/src/models/Factura.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -156,7 +157,7 @@ CMakeFiles/MyProject.dir/src/models/Factura.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/models/DetalleFactura.h \
+ /home/juan/Documentos/c++/src/models/DetalleFactura.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \

@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o: \
- /home/juan/Documentos/C-/src/utils/Utils.cpp /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/utils/Utils.h \
- /home/juan/Documentos/C-/src/models/Factura.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/juan/Documentos/c++/src/utils/Utils.cpp /usr/include/stdc-predef.h \
+ /home/juan/Documentos/c++/src/utils/Utils.h \
+ /home/juan/Documentos/c++/src/models/Factura.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -157,4 +157,4 @@ CMakeFiles/MyProject.dir/src/utils/Utils.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/models/DetalleFactura.h
+ /home/juan/Documentos/c++/src/models/DetalleFactura.h

@@ -25,6 +25,9 @@ public:
 
     // Listar todos los registros de stock
     std::vector<std::shared_ptr<Stock>> listarStocks() const;
+
+    std::vector<Stock> listarBajoStockMinimo() const;
+
 };
 
 #endif // STOCKCONTROLLER_H

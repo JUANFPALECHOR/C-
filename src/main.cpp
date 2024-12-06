@@ -86,7 +86,7 @@ void manejarMenu(ProductoController& productoCtrl, MarcaController& marcaCtrl,
         // Validar entrada
         if(cin.fail()) {
             cin.clear(); // Limpiar el error
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Ignorar el resto de la línea
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
             cout << "Entrada inválida. Por favor, ingrese un número.\n";
             continue;
         }

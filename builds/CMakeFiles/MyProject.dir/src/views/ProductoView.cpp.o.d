@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: \
- /home/juan/Documentos/C-/src/views/ProductoView.cpp \
+ /home/juan/Documentos/c++/src/views/ProductoView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/ProductoView.h \
- /home/juan/Documentos/C-/src/views/../controllers/ProductoController.h \
+ /home/juan/Documentos/c++/src/views/ProductoView.h \
+ /home/juan/Documentos/c++/src/views/../controllers/ProductoController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -53,7 +53,7 @@ CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/juan/Documentos/C-/src/models/Producto.h \
+ /home/juan/Documentos/c++/src/models/Producto.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
@@ -158,10 +158,10 @@ CMakeFiles/MyProject.dir/src/views/ProductoView.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/views/../controllers/MarcaController.h \
- /home/juan/Documentos/C-/src/models/Marca.h /usr/include/c++/13/iostream \
- /usr/include/c++/13/ostream /usr/include/c++/13/ios \
- /usr/include/c++/13/bits/ios_base.h \
+ /home/juan/Documentos/c++/src/views/../controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/models/Marca.h \
+ /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
+ /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
  /usr/include/c++/13/system_error \

@@ -34,6 +34,7 @@ private:
     void mostrarMarcaMasVendida();
     void generarReporteGanancias();
     void mostrarFacturasDeVentasPorMes();
+    void buscarYMostrarFacturaPorId();
 };
 
 #endif 

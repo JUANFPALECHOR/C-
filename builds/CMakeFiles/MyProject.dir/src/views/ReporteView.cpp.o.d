@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o: \
- /home/juan/Documentos/C-/src/views/ReporteView.cpp \
+ /home/juan/Documentos/c++/src/views/ReporteView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/ReporteView.h \
- /home/juan/Documentos/C-/src/controllers/ReporteController.h \
+ /home/juan/Documentos/c++/src/views/ReporteView.h \
+ /home/juan/Documentos/c++/src/controllers/ReporteController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -128,9 +128,9 @@ CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o: \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h \
- /home/juan/Documentos/C-/src/controllers/FacturaController.h \
- /home/juan/Documentos/C-/src/models/Factura.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/char_traits.h \
+ /home/juan/Documentos/c++/src/controllers/FacturaController.h \
+ /home/juan/Documentos/c++/src/models/Factura.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \
@@ -162,12 +162,12 @@ CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/juan/Documentos/C-/src/models/DetalleFactura.h \
- /home/juan/Documentos/C-/src/controllers/StockController.h \
- /home/juan/Documentos/C-/src/models/Stock.h \
- /home/juan/Documentos/C-/src/controllers/ClienteController.h \
- /home/juan/Documentos/C-/src/controllers/../models/Cliente.h \
- /home/juan/Documentos/C-/src/controllers/../models/Persona.h \
+ /home/juan/Documentos/c++/src/models/DetalleFactura.h \
+ /home/juan/Documentos/c++/src/controllers/StockController.h \
+ /home/juan/Documentos/c++/src/models/Stock.h \
+ /home/juan/Documentos/c++/src/controllers/ClienteController.h \
+ /home/juan/Documentos/c++/src/controllers/../models/Cliente.h \
+ /home/juan/Documentos/c++/src/controllers/../models/Persona.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -186,12 +186,12 @@ CMakeFiles/MyProject.dir/src/views/ReporteView.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/juan/Documentos/C-/src/controllers/EmpleadoController.h \
- /home/juan/Documentos/C-/src/controllers/../models/Empleado.h \
- /home/juan/Documentos/C-/src/controllers/ProductoController.h \
- /home/juan/Documentos/C-/src/models/Producto.h \
- /home/juan/Documentos/C-/src/controllers/MarcaController.h \
- /home/juan/Documentos/C-/src/models/Marca.h \
- /home/juan/Documentos/C-/src/controllers/MarcaController.h \
- /home/juan/Documentos/C-/src/controllers/ProductoController.h \
+ /home/juan/Documentos/c++/src/controllers/EmpleadoController.h \
+ /home/juan/Documentos/c++/src/controllers/../models/Empleado.h \
+ /home/juan/Documentos/c++/src/controllers/ProductoController.h \
+ /home/juan/Documentos/c++/src/models/Producto.h \
+ /home/juan/Documentos/c++/src/controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/models/Marca.h \
+ /home/juan/Documentos/c++/src/controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/controllers/ProductoController.h \
  /usr/include/c++/13/limits

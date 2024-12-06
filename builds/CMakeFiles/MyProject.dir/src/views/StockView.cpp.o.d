@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: \
- /home/juan/Documentos/C-/src/views/StockView.cpp \
+ /home/juan/Documentos/c++/src/views/StockView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/StockView.h \
- /home/juan/Documentos/C-/src/views/../controllers/StockController.h \
+ /home/juan/Documentos/c++/src/views/StockView.h \
+ /home/juan/Documentos/c++/src/views/../controllers/StockController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,9 +123,9 @@ CMakeFiles/MyProject.dir/src/views/StockView.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/models/Stock.h \
- /home/juan/Documentos/C-/src/views/../controllers/ProductoController.h \
- /home/juan/Documentos/C-/src/models/Producto.h \
+ /home/juan/Documentos/c++/src/models/Stock.h \
+ /home/juan/Documentos/c++/src/views/../controllers/ProductoController.h \
+ /home/juan/Documentos/c++/src/models/Producto.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \

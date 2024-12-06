@@ -33,8 +33,9 @@ void FacturaView::mostrarMenu() {
         cout << "4. Generar Reporte de Meses con Mayores Ventas\n";
         cout << "5. Mostrar Marca Más Vendida\n";
         cout << "6. Generar Reporte de Ganancias\n";
-        cout << "7. Mostrar Facturas de Ventas por Mes\n"; // Nueva opción
-        cout << "8. Volver al Menú Principal\n";
+        cout << "7. Mostrar Facturas de Ventas por Mes\n"; 
+        cout << "8. Buscar y Mostrar Factura por ID\n";
+        cout << "9. Volver al Menú Principal\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
@@ -68,13 +69,16 @@ void FacturaView::mostrarMenu() {
                 mostrarFacturasDeVentasPorMes(); 
                 break;
             case 8:
-                cout << "Volviendo al menú principal...\n";
+                buscarYMostrarFacturaPorId(); 
+                break;
+            case 9:
+                cout << "volviendo al menu..\n";
                 break;
             default:
                 cout << "Opción inválida. Por favor, seleccione una opción válida.\n";
                 break;
         }
-    } while(opcion != 8);
+    } while(opcion != 9);
 }
 
 
@@ -505,4 +509,70 @@ void FacturaView::mostrarFacturasDeVentasPorMes() {
              << std::fixed << std::setprecision(2) << valorTotal << "\t\t"
              << idEmpleado << "\t\t" << idCliente << "\n";
     }
+}
+
+void FacturaView::buscarYMostrarFacturaPorId() {
+    int idFactura;
+    cout << "Ingrese el ID de la factura que desea buscar: ";
+    cin >> idFactura;
+
+    if (cin.fail()) {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Entrada inválida. Por favor, ingrese un número válido.\n";
+        return;
+    }
+
+    // Obtener la factura desde el controlador
+    shared_ptr<Factura> factura = facturaCtrl.obtenerFacturaPorId(idFactura);
+
+    if (!factura) {
+        cout << "No se encontró una factura con el ID " << idFactura << ".\n";
+        return;
+    }
+
+    // Mostrar los datos de la factura
+    cout << "\n--- Detalles de la Factura ---\n";
+    cout << "ID Factura: " << factura->getIdFactura() << "\n";
+    cout << "Fecha: " << factura->getFechaHora().dia << "/"
+         << factura->getFechaHora().mes << "/"
+         << factura->getFechaHora().año << "\n";
+    cout << "Hora: " << factura->getFechaHora().hora << ":"
+         << factura->getFechaHora().minuto << ":"
+         << factura->getFechaHora().segundo << "\n";
+    cout << "Tipo de Factura: " << (factura->getTipoFactura() == TipoFactura::VENTA ? "Venta" : "Compra") << "\n";
+    cout << "ID Empleado: " << factura->getIdEmpleado() << "\n";
+
+    if (factura->getTipoFactura() == TipoFactura::VENTA) {
+        cout << "ID Cliente: " << factura->getIdCliente() << "\n";
+    } else {
+        cout << "ID Proveedor: " << factura->getIdProveedor() << "\n";
+    }
+
+    // Mostrar los detalles de los productos en la factura
+    cout << "\n--- Detalles de Productos ---\n";
+    cout << "Descripción\tCantidad\tValor Unitario\tSubtotal\n";
+
+    double subtotalFactura = 0.0;
+
+    for (const auto& detalle : factura->getDetalles()) {
+        int idProducto = detalle->getIdProducto();
+        int cantidad = detalle->getCantidadProductos();
+        double valorUnitario = detalle->getValorProducto();
+        double subtotal = detalle->calcularSubtotal();
+        subtotalFactura += subtotal;
+
+        // Obtener la descripción del producto
+        Producto* producto = productoCtrl.obtenerProductoPorId(idProducto);
+        string descripcion = producto ? producto->getDescripcionProducto() : "Producto no encontrado";
+
+        cout << descripcion << "\t" << cantidad << "\t\t$"
+             << valorUnitario << "\t\t$" << subtotal << "\n";
+    }
+
+    // Mostrar el total de la factura
+    double valorTotalFactura = factura->calcularTotal();
+
+    cout << "\nSubtotal de la Factura: $" << subtotalFactura << "\n";
+    cout << "Valor Total de la Factura: $" << valorTotalFactura << "\n";
 }

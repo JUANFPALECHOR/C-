@@ -1,7 +1,7 @@
 CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o: \
- /home/juan/Documentos/C-/src/controllers/MarcaController.cpp \
+ /home/juan/Documentos/c++/src/controllers/MarcaController.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/controllers/MarcaController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -52,7 +52,7 @@ CMakeFiles/MyProject.dir/src/controllers/MarcaController.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/juan/Documentos/C-/src/models/Marca.h /usr/include/c++/13/string \
+ /home/juan/Documentos/c++/src/models/Marca.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \

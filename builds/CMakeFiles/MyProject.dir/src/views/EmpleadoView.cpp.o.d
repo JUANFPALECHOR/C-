@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: \
- /home/juan/Documentos/C-/src/views/EmpleadoView.cpp \
+ /home/juan/Documentos/c++/src/views/EmpleadoView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/EmpleadoView.h \
- /home/juan/Documentos/C-/src/views/../controllers/EmpleadoController.h \
+ /home/juan/Documentos/c++/src/views/EmpleadoView.h \
+ /home/juan/Documentos/c++/src/views/../controllers/EmpleadoController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,8 +123,8 @@ CMakeFiles/MyProject.dir/src/views/EmpleadoView.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Empleado.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Persona.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Empleado.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Persona.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \

@@ -1,7 +1,7 @@
 CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: \
- /home/juan/Documentos/C-/src/controllers/StockController.cpp \
+ /home/juan/Documentos/c++/src/controllers/StockController.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/controllers/StockController.h \
+ /home/juan/Documentos/c++/src/controllers/StockController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -122,4 +122,4 @@ CMakeFiles/MyProject.dir/src/controllers/StockController.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/models/Stock.h
+ /home/juan/Documentos/c++/src/models/Stock.h

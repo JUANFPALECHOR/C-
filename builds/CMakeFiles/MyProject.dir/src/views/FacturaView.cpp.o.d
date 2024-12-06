@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
- /home/juan/Documentos/C-/src/views/FacturaView.cpp \
+ /home/juan/Documentos/c++/src/views/FacturaView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/FacturaView.h \
- /home/juan/Documentos/C-/src/views/../controllers/FacturaController.h \
+ /home/juan/Documentos/c++/src/views/FacturaView.h \
+ /home/juan/Documentos/c++/src/views/../controllers/FacturaController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -123,8 +123,8 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/models/Factura.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/char_traits.h \
+ /home/juan/Documentos/c++/src/models/Factura.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
  /usr/include/c++/13/clocale /usr/include/locale.h \
@@ -156,12 +156,12 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/juan/Documentos/C-/src/models/DetalleFactura.h \
- /home/juan/Documentos/C-/src/views/../controllers/StockController.h \
- /home/juan/Documentos/C-/src/models/Stock.h \
- /home/juan/Documentos/C-/src/views/../controllers/EmpleadoController.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Empleado.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Persona.h \
+ /home/juan/Documentos/c++/src/models/DetalleFactura.h \
+ /home/juan/Documentos/c++/src/views/../controllers/StockController.h \
+ /home/juan/Documentos/c++/src/models/Stock.h \
+ /home/juan/Documentos/c++/src/views/../controllers/EmpleadoController.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Empleado.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Persona.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/bits/ios_base.h \
  /usr/include/c++/13/bits/locale_classes.h \
@@ -180,15 +180,15 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
  /usr/include/c++/13/bits/istream.tcc \
- /home/juan/Documentos/C-/src/views/../controllers/ClienteController.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Cliente.h \
- /home/juan/Documentos/C-/src/views/../controllers/ProveedorController.h \
- /home/juan/Documentos/C-/src/views/../controllers/../models/Proveedor.h \
- /home/juan/Documentos/C-/src/views/../controllers/ProductoController.h \
- /home/juan/Documentos/C-/src/models/Producto.h \
- /home/juan/Documentos/C-/src/views/../controllers/MarcaController.h \
- /home/juan/Documentos/C-/src/models/Marca.h \
- /home/juan/Documentos/C-/src/utils/Utils.h /usr/include/c++/13/limits \
+ /home/juan/Documentos/c++/src/views/../controllers/ClienteController.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Cliente.h \
+ /home/juan/Documentos/c++/src/views/../controllers/ProveedorController.h \
+ /home/juan/Documentos/c++/src/views/../controllers/../models/Proveedor.h \
+ /home/juan/Documentos/c++/src/views/../controllers/ProductoController.h \
+ /home/juan/Documentos/c++/src/models/Producto.h \
+ /home/juan/Documentos/c++/src/views/../controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/models/Marca.h \
+ /home/juan/Documentos/c++/src/utils/Utils.h /usr/include/c++/13/limits \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \

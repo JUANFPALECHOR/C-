@@ -1,9 +1,9 @@
 CMakeFiles/MyProject.dir/src/models/Empleado.cpp.o: \
- /home/juan/Documentos/C-/src/models/Empleado.cpp \
+ /home/juan/Documentos/c++/src/models/Empleado.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/models/Empleado.h \
- /home/juan/Documentos/C-/src/models/Persona.h /usr/include/c++/13/string \
- /usr/include/c++/13/bits/requires_hosted.h \
+ /home/juan/Documentos/c++/src/models/Empleado.h \
+ /home/juan/Documentos/c++/src/models/Persona.h \
+ /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \

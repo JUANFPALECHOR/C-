@@ -1,7 +1,7 @@
 CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o: \
- /home/juan/Documentos/C-/src/controllers/ProveedorController.cpp \
+ /home/juan/Documentos/c++/src/controllers/ProveedorController.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/controllers/ProveedorController.h \
+ /home/juan/Documentos/c++/src/controllers/ProveedorController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -122,8 +122,8 @@ CMakeFiles/MyProject.dir/src/controllers/ProveedorController.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juan/Documentos/C-/src/controllers/../models/Proveedor.h \
- /home/juan/Documentos/C-/src/controllers/../models/Persona.h \
+ /home/juan/Documentos/c++/src/controllers/../models/Proveedor.h \
+ /home/juan/Documentos/c++/src/controllers/../models/Persona.h \
  /usr/include/c++/13/string /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \

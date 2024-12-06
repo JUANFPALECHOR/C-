@@ -1,8 +1,8 @@
 CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: \
- /home/juan/Documentos/C-/src/views/MarcaView.cpp \
+ /home/juan/Documentos/c++/src/views/MarcaView.cpp \
  /usr/include/stdc-predef.h \
- /home/juan/Documentos/C-/src/views/MarcaView.h \
- /home/juan/Documentos/C-/src/views/../controllers/MarcaController.h \
+ /home/juan/Documentos/c++/src/views/MarcaView.h \
+ /home/juan/Documentos/c++/src/views/../controllers/MarcaController.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -53,7 +53,7 @@ CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
- /home/juan/Documentos/C-/src/models/Marca.h /usr/include/c++/13/string \
+ /home/juan/Documentos/c++/src/models/Marca.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/stringfwd.h \
  /usr/include/c++/13/bits/char_traits.h \
  /usr/include/c++/13/bits/postypes.h /usr/include/c++/13/cwchar \
@@ -121,7 +121,7 @@ CMakeFiles/MyProject.dir/src/views/MarcaView.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/13/bits/charconv.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /home/juan/Documentos/C-/src/views/../utils/Validator.h \
+ /home/juan/Documentos/c++/src/views/../utils/Validator.h \
  /usr/include/c++/13/regex /usr/include/c++/13/bitset \
  /usr/include/c++/13/locale /usr/include/c++/13/bits/locale_classes.h \
  /usr/include/c++/13/ext/atomicity.h \
