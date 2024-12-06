@@ -1,9 +1,12 @@
 #include "FacturaView.h"
-#include "Utils.h" // Asegúrate de incluir Utils.h para la validación de fechas
+#include "Utils.h" 
 #include <iostream>
 #include <limits>
 #include <memory>
 #include <algorithm>
+#include <unordered_map>
+#include <iomanip>
+
 
 using namespace std;
 
@@ -11,12 +14,14 @@ FacturaView::FacturaView(FacturaController& facturaCtrl,
                          EmpleadoController& empleadoCtrl,
                          ClienteController& clienteCtrl,
                          ProveedorController& proveedorCtrl,
-                         ProductoController& productoCtrl)
+                         ProductoController& productoCtrl,
+                         MarcaController& marcaCtrl)
     : facturaCtrl(facturaCtrl),
       empleadoCtrl(empleadoCtrl),
       clienteCtrl(clienteCtrl),
       proveedorCtrl(proveedorCtrl),
-      productoCtrl(productoCtrl) {}
+      productoCtrl(productoCtrl),
+      marcaCtrl(marcaCtrl) {}
 
 void FacturaView::mostrarMenu() {
     int opcion = 0;
@@ -26,7 +31,10 @@ void FacturaView::mostrarMenu() {
         cout << "2. Crear Factura de Compra\n";
         cout << "3. Generar Reporte de Total de Ventas Mensuales\n";
         cout << "4. Generar Reporte de Meses con Mayores Ventas\n";
-        cout << "5. Volver al Menú Principal\n";
+        cout << "5. Mostrar Marca Más Vendida\n";
+        cout << "6. Generar Reporte de Ganancias\n";
+        cout << "7. Mostrar Facturas de Ventas por Mes\n"; // Nueva opción
+        cout << "8. Volver al Menú Principal\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
@@ -51,14 +59,25 @@ void FacturaView::mostrarMenu() {
                 generarReporteMesesConMayoresVentas();
                 break;
             case 5:
+                mostrarMarcaMasVendida();
+                break;
+            case 6:
+                generarReporteGanancias();
+                break;
+            case 7:
+                mostrarFacturasDeVentasPorMes(); 
+                break;
+            case 8:
                 cout << "Volviendo al menú principal...\n";
                 break;
             default:
                 cout << "Opción inválida. Por favor, seleccione una opción válida.\n";
                 break;
         }
-    } while(opcion != 5);
+    } while(opcion != 8);
 }
+
+
 
 void FacturaView::crearFacturaVenta() {
     int idFactura, idEmpleado, idCliente;
@@ -342,5 +361,148 @@ void FacturaView::generarReporteMesesConMayoresVentas() {
         if (total == maxVentas) {
             cout << "Mes: " << mes << ", Total Ventas: $" << total << "\n";
         }
+    }
+}
+
+void FacturaView::mostrarMarcaMasVendida() {
+    // Mapa para acumular ventas por marca
+    std::unordered_map<int, double> ventasPorMarca; 
+
+    // Recorrer todas las facturas de venta
+    for (const auto& factura : facturaCtrl.listarFacturas()) {
+        if (factura->getTipoFactura() == TipoFactura::VENTA) {
+            for (const auto& detalle : factura->getDetalles()) {
+                int idProducto = detalle->getIdProducto();
+                Producto* producto = productoCtrl.obtenerProductoPorId(idProducto);
+                if (producto) {
+                    int idMarca = producto->getIdMarca();
+                    double subtotal = detalle->calcularSubtotal();
+                    ventasPorMarca[idMarca] += subtotal;
+                }
+            }
+        }
+    }
+
+    if (ventasPorMarca.empty()) {
+        cout << "No hay ventas registradas.\n";
+        return;
+    }
+
+    // Encontrar la marca con mayor total de ventas
+    int idMarcaMasVendida = -1;
+    double maxVentas = 0.0;
+    for (const auto& [idMarca, totalVentas] : ventasPorMarca) {
+        if (totalVentas > maxVentas) {
+            maxVentas = totalVentas;
+            idMarcaMasVendida = idMarca;
+        }
+    }
+
+    if (idMarcaMasVendida == -1) {
+        cout << "No se pudo determinar la marca más vendida.\n";
+        return;
+    }
+
+    Marca* marcaMasVendida = marcaCtrl.obtenerMarcaPorId(idMarcaMasVendida);
+    if (marcaMasVendida) {
+        cout << "\n--- Marca Más Vendida ---\n";
+        cout << "ID: " << marcaMasVendida->getIdMarca() << "\n";
+        cout << "Nombre: " << marcaMasVendida->getNombreMarca() << "\n";
+        cout << "Total Ventas: $" << maxVentas << "\n";
+    } else {
+        cout << "Error: Marca con ID " << idMarcaMasVendida << " no encontrada.\n";
+    }
+}
+
+void FacturaView::generarReporteGanancias() {
+    int cantidadVentas = 0;
+    double totalVentas = 0.0;
+
+    int cantidadCompras = 0;
+    double totalCompras = 0.0;
+
+    // Recorrer todas las facturas
+    for (const auto& factura : facturaCtrl.listarFacturas()) {
+        if (factura->getTipoFactura() == TipoFactura::VENTA) {
+            cantidadVentas++;
+            totalVentas += factura->calcularTotal();
+        } else if (factura->getTipoFactura() == TipoFactura::COMPRA) {
+            cantidadCompras++;
+            totalCompras += factura->calcularTotal();
+        }
+    }
+
+    // Mostrar los resultados
+    cout << "\n--- Reporte de Ganancias ---\n";
+    cout << "Facturas de Venta:\n";
+    cout << "Cantidad: " << cantidadVentas << "\n";
+    cout << "Total Ventas: $" << totalVentas << "\n\n";
+
+    cout << "Facturas de Compra:\n";
+    cout << "Cantidad: " << cantidadCompras << "\n";
+    cout << "Total Compras: $" << totalCompras << "\n\n";
+
+    double ganancias = totalVentas - totalCompras;
+    cout << "Ganancias Totales: $" << ganancias << "\n";
+}
+
+void FacturaView::mostrarFacturasDeVentasPorMes() {
+    int mes, anio;
+    cout << "Ingrese el mes (1-12): ";
+    cin >> mes;
+    cout << "Ingrese el año (e.g., 2023): ";
+    cin >> anio;
+
+    if (cin.fail() || mes < 1 || mes > 12) {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Entrada inválida. Por favor, ingrese un mes válido.\n";
+        return;
+    }
+
+    vector<shared_ptr<Factura>> facturas = facturaCtrl.listarFacturas();
+
+    // Filtrar las facturas de venta del mes y año indicados
+    vector<shared_ptr<Factura>> facturasFiltradas;
+
+    for (const auto& factura : facturas) {
+        if (factura->getTipoFactura() == TipoFactura::VENTA) {
+            FechaHora fechaHoraFactura = factura->getFechaHora();
+            int facturaMes = fechaHoraFactura.mes;
+            int facturaAnio = fechaHoraFactura.año;
+
+            if (facturaMes == mes && facturaAnio == anio) {
+                facturasFiltradas.push_back(factura);
+            }
+        }
+    }
+
+    if (facturasFiltradas.empty()) {
+        cout << "No hay facturas de venta registradas para el mes " << mes << " del año " << anio << ".\n";
+        return;
+    }
+
+    // Mostrar las facturas filtradas
+    cout << "\n--- Facturas de Venta del Mes " << mes << " del Año " << anio << " ---\n";
+    cout << "ID\tFecha\t\tHora\t\tValor Total\tID Empleado\tID Cliente\n";
+    for (const auto& factura : facturasFiltradas) {
+        int idFactura = factura->getIdFactura();
+        FechaHora fechaHoraFactura = factura->getFechaHora();
+        double valorTotal = factura->calcularTotal();
+        int idEmpleado = factura->getIdEmpleado();
+        int idCliente = factura->getIdCliente();
+
+        // Formatear fecha y hora
+        char fechaStr[11];
+        snprintf(fechaStr, sizeof(fechaStr), "%02d/%02d/%04d",
+                 fechaHoraFactura.dia, fechaHoraFactura.mes, fechaHoraFactura.año);
+
+        char horaStr[9];
+        snprintf(horaStr, sizeof(horaStr), "%02d:%02d:%02d",
+                 fechaHoraFactura.hora, fechaHoraFactura.minuto, fechaHoraFactura.segundo);
+
+        cout << idFactura << "\t" << fechaStr << "\t" << horaStr << "\t$"
+             << std::fixed << std::setprecision(2) << valorTotal << "\t\t"
+             << idEmpleado << "\t\t" << idCliente << "\n";
     }
 }

@@ -3,13 +3,13 @@
 
 #include <string>
 
-// Definición de la clase Producto
+
 class Producto {
 private:
-    int idProducto;                   // Identificador único del producto
-    std::string descripcionProducto;  // Descripción detallada del producto
-    int idMarca;                      // Identificador de la marca asociada al producto
-    double precio;                    // Precio del producto (nuevo atributo)
+    int idProducto;                   
+    std::string descripcionProducto;  
+    int idMarca;                      
+    double precio;                    
 
 public:
     // Constructor
@@ -25,8 +25,8 @@ public:
     int getIdMarca() const;
     void setIdMarca(int idMarca);
 
-    double getPrecio() const;         // Nuevo getter
-    void setPrecio(double precio);    // Nuevo setter
+    double getPrecio() const;        
+    void setPrecio(double precio);    
 };
 
-#endif // PRODUCTO_H
+#endif 

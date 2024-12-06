@@ -35,4 +35,4 @@ public:
     std::vector<std::pair<int, double>> obtenerVentasPorMes(int año) const;
 };
 
-#endif // FACTURACONTROLLER_H
+#endif 

@@ -29,4 +29,4 @@ public:
     std::vector<Producto> obtenerProductosPorMarca(int idMarca) const;
 };
 
-#endif // PRODUCTOCONTROLLER_H
+#endif 

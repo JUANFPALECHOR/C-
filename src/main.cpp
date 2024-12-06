@@ -24,6 +24,7 @@
 #include "views/ProveedorView.h"
 #include "views/StockView.h"
 #include "views/FacturaView.h"
+#include "views/ReporteView.h"
 
 
 using namespace std;
@@ -45,6 +46,7 @@ int main() {
     StockController stockCtrl;
     FacturaController facturaCtrl(stockCtrl);
     ReporteController reporteCtrl(facturaCtrl, stockCtrl, clienteCtrl, empleadoCtrl, productoCtrl, marcaCtrl);
+
     //MarcaView marcaView(marcaCtrl);
     //marcaView.mostrarMenu();
 
@@ -65,15 +67,16 @@ void mostrarMenu() {
     cout << "4. Gestionar Clientes\n";
     cout << "5. Gestionar Proveedores\n";
     cout << "6. Gestionar Stock\n";
-    cout << "7. Procesar Facturas\n";   
+    cout << "7. Procesar Facturas\n";  
+    cout << "8. Reportes\n";  
     cout << "10. Salir\n";
     cout << "Seleccione una opción: ";
 }
 
 void manejarMenu(ProductoController& productoCtrl, MarcaController& marcaCtrl,
-                EmpleadoController& empleadoCtrl, ClienteController& clienteCtrl,
-                ProveedorController& proveedorCtrl, StockController & stockCtrl,
-                FacturaController&facturaCtrl, ReporteController& reporteCtrl) {
+                 EmpleadoController& empleadoCtrl, ClienteController& clienteCtrl,
+                 ProveedorController& proveedorCtrl, StockController& stockCtrl,
+                 FacturaController& facturaCtrl, ReporteController& reporteCtrl) {
     int opcion = 0;
 
     while (true) {
@@ -121,13 +124,15 @@ void manejarMenu(ProductoController& productoCtrl, MarcaController& marcaCtrl,
                 break;
             }
             case 7: {
-                FacturaView facturaView(facturaCtrl, empleadoCtrl, clienteCtrl, proveedorCtrl, productoCtrl);
+                FacturaView facturaView(facturaCtrl, empleadoCtrl, clienteCtrl, proveedorCtrl, productoCtrl, marcaCtrl);
                 facturaView.mostrarMenu();
                 break;
                 
             }
             case 8: {
-                
+                ReporteView reporteView(reporteCtrl, marcaCtrl, productoCtrl);
+                reporteView.mostrarMenuReportes();
+                break;
             }
             case 9: {
                 

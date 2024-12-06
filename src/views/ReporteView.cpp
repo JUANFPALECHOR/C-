@@ -1,9 +1,38 @@
 #include "ReporteView.h"
 
-ReporteView::ReporteView(ReporteController& reporteCtrl, MarcaController& marcaCtrl)
-    : reporteController(reporteCtrl), marcaController(marcaCtrl) {}
+ReporteView::ReporteView(ReporteController& reporteCtrl, MarcaController& marcaCtrl, ProductoController& productoCtrl)
+    : reporteController(reporteCtrl), marcaController(marcaCtrl), productoController(productoCtrl) {}
 
-// Método para imprimir productos por marca
+void ReporteView::mostrarMenuReportes() {
+    int opcion = 0;
+    do {
+        std::cout << "\n--- Menú de Reportes ---\n";
+        std::cout << "1. Imprimir productos por marca\n";
+        std::cout << "2. Volver al menú principal\n";
+        std::cout << "Seleccione una opción: ";
+        std::cin >> opcion;
+
+        if(std::cin.fail()) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Entrada inválida. Por favor, ingrese un número.\n";
+            continue;
+        }
+
+        switch(opcion) {
+            case 1:
+                imprimirProductosPorMarca();
+                break;
+            case 2:
+                std::cout << "Volviendo al menú principal...\n";
+                break;
+            default:
+                std::cout << "Opción inválida. Por favor, seleccione una opción válida.\n";
+                break;
+        }
+    } while(opcion != 2);
+}
+
 void ReporteView::imprimirProductosPorMarca() {
     std::vector<Marca> marcas = marcaController.listarMarcas();
 
@@ -28,24 +57,26 @@ void ReporteView::imprimirProductosPorMarca() {
         return;
     }
 
-    // Asumiendo que obtenerMarcaPorId retorna una copia de Marca
-    Marca marcaSeleccionada = marcaController.obtenerMarcaPorId(idMarca);
-    if(marcaSeleccionada.getIdMarca() == 0) { // Asumiendo que ID 0 no es válido
+    // Obtener el puntero a la marca
+    Marca* marcaSeleccionada = marcaController.obtenerMarcaPorId(idMarca);
+    if (marcaSeleccionada == nullptr) {
         std::cout << "Marca con ID " << idMarca << " no encontrada.\n";
         return;
     }
 
-    std::vector<Producto> productos = reporteController.mostrarProductosPorMarca(idMarca);
+    // Ahora utilizamos productoController para obtener los productos
+    std::vector<Producto> productos = productoController.obtenerProductosPorMarca(idMarca);
 
     if(productos.empty()) {
-        std::cout << "No hay productos asociados a la marca \"" << marcaSeleccionada.getNombreMarca() << "\".\n";
+        std::cout << "No hay productos asociados a la marca \"" << marcaSeleccionada->getNombreMarca() << "\".\n";
         return;
     }
 
-    std::cout << "\n--- Productos de la Marca \"" << marcaSeleccionada.getNombreMarca() << "\" ---\n";
+    std::cout << "\n--- Productos de la Marca \"" << marcaSeleccionada->getNombreMarca() << "\" ---\n";
+    std::cout << "ID\tDescripción\tPrecio\n";
     for(const auto& producto : productos) {
-        std::cout << "ID: " << producto.getIdProducto()
-                  << " | Precio: $" << producto.getPrecio() << "\n";
+        std::cout << producto.getIdProducto() << "\t"
+                  << producto.getDescripcionProducto() << "\t"
+                  << producto.getPrecio() << "\n";
     }
 }
-
