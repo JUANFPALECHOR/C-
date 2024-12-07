@@ -1,0 +1,3 @@
+/home/juan/Documentos/c++/build/CMakeFiles/MyProject.dir
+/home/juan/Documentos/c++/build/CMakeFiles/edit_cache.dir
+/home/juan/Documentos/c++/build/CMakeFiles/rebuild_cache.dir

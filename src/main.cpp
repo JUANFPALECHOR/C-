@@ -37,7 +37,7 @@ void manejarMenu(ProductoController& productoCtrl, MarcaController& marcaCtrl,
                 FacturaController&facturaCtrl, ReporteController& reporteCtrl);
 
 int main() {
-    // Crear instancias de los controladores
+    // Creo instancias de los controladores
     ProductoController productoCtrl;
     MarcaController marcaCtrl;
     EmpleadoController empleadoCtrl;
@@ -47,13 +47,12 @@ int main() {
     FacturaController facturaCtrl(stockCtrl);
     ReporteController reporteCtrl(facturaCtrl, stockCtrl, clienteCtrl, empleadoCtrl, productoCtrl, marcaCtrl);
 
-    //MarcaView marcaView(marcaCtrl);
-    //marcaView.mostrarMenu();
+    
 
-    // Inicializar el generador de IDs (Singleton)
+    
     IDGenerator* idGen = IDGenerator::getInstance();
 
-    // Llamar al manejador del menú
+    // Llamo al manejador del menú
     manejarMenu(productoCtrl, marcaCtrl, empleadoCtrl, clienteCtrl, proveedorCtrl,stockCtrl,facturaCtrl,reporteCtrl);
 
     return 0;
@@ -85,7 +84,7 @@ void manejarMenu(ProductoController& productoCtrl, MarcaController& marcaCtrl,
 
         // Validar entrada
         if(cin.fail()) {
-            cin.clear(); // Limpiar el error
+            cin.clear(); 
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
             cout << "Entrada inválida. Por favor, ingrese un número.\n";
             continue;

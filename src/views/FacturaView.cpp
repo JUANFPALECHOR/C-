@@ -169,7 +169,7 @@ void FacturaView::crearFacturaVenta() {
             continue;
         }
 
-        if (idProducto == 0) break; // Finalizar detalles
+        if (idProducto == 0) break; 
 
         auto producto = productoCtrl.obtenerProductoPorId(idProducto);
         if (producto == nullptr) {
@@ -198,7 +198,7 @@ void FacturaView::crearFacturaVenta() {
         factura->addDetalle(detalle);
     }
 
-    // Verificar que la factura tenga al menos un detalle
+   
     if (factura->getDetalles().empty()) {
         cout << "Error: La factura debe tener al menos un producto.\n";
         return;
@@ -218,7 +218,7 @@ void FacturaView::crearFacturaCompra() {
     FechaHora fechaHora;
     TipoFactura tipoFactura = TipoFactura::COMPRA;
 
-    // Generar el siguiente ID de Factura utilizando el controlador
+    
     idFactura = facturaCtrl.generarSiguienteId();
 
     cout << "Ingrese el ID del Empleado: ";
@@ -254,7 +254,7 @@ void FacturaView::crearFacturaCompra() {
     cout << "Segundo (0-59): ";
     cin >> fechaHora.segundo;
 
-    // Validar la fecha ingresada
+    // Validacion de la fecha ingresada
     if (cin.fail() || !esFechaValida(fechaHora)) {
         cin.clear();
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -262,14 +262,14 @@ void FacturaView::crearFacturaCompra() {
         return;
     }
 
-    cin.ignore(); // Limpiar el buffer
+    cin.ignore(); 
 
-    // Crear la factura
+    
     shared_ptr<Factura> factura = make_shared<Factura>(
         idFactura, fechaHora, tipoFactura, idEmpleado, 0, idProveedor
     );
 
-    // Añadir detalles a la factura
+    
     while (true) {
         int idProducto, cantidad;
         double valorProducto;
@@ -283,7 +283,7 @@ void FacturaView::crearFacturaCompra() {
             continue;
         }
 
-        if (idProducto == 0) break; // Finalizar detalles
+        if (idProducto == 0) break; 
 
         auto producto = productoCtrl.obtenerProductoPorId(idProducto);
         if (producto == nullptr) {
@@ -300,10 +300,10 @@ void FacturaView::crearFacturaCompra() {
             continue;
         }
 
-        // Obtener el valor actual del producto
+        
         valorProducto = producto->getPrecio();
 
-        // Crear DetalleFactura
+        
         int idDetalle = factura->getDetalles().size() + 1;
         shared_ptr<DetalleFactura> detalle = make_shared<DetalleFactura>(
             idDetalle, idFactura, idProducto, valorProducto, cantidad
@@ -312,13 +312,13 @@ void FacturaView::crearFacturaCompra() {
         factura->addDetalle(detalle);
     }
 
-    // Verificar que la factura tenga al menos un detalle
+    
     if (factura->getDetalles().empty()) {
         cout << "Error: La factura debe tener al menos un producto.\n";
         return;
     }
 
-    // Crear la factura de compra
+    
     if (facturaCtrl.crearFacturaCompra(factura)) {
         cout << "Factura de compra creada exitosamente con ID " << idFactura << ".\n";
         cout << "Total de la Factura: $" << factura->calcularTotal() << "\n";
@@ -367,7 +367,7 @@ void FacturaView::generarReporteMesesConMayoresVentas() {
         return;
     }
 
-    // Encontrar el mayor total de ventas
+    
     double maxVentas = 0.0;
     for (const auto& [mes, total] : ventasPorMes) {
         if (total > maxVentas) {
@@ -375,7 +375,7 @@ void FacturaView::generarReporteMesesConMayoresVentas() {
         }
     }
 
-    // Identificar los meses con el mayor total
+    
     cout << "Mes(es) con mayores ventas en el año " << año << ":\n";
     for (const auto& [mes, total] : ventasPorMes) {
         if (total == maxVentas) {
@@ -385,7 +385,7 @@ void FacturaView::generarReporteMesesConMayoresVentas() {
 }
 
 void FacturaView::mostrarMarcaMasVendida() {
-    // Mapa para acumular ventas por marca
+   
     std::unordered_map<int, double> ventasPorMarca; 
 
     // Recorrer todas las facturas de venta
@@ -408,7 +408,7 @@ void FacturaView::mostrarMarcaMasVendida() {
         return;
     }
 
-    // Encontrar la marca con mayor total de ventas
+    
     int idMarcaMasVendida = -1;
     double maxVentas = 0.0;
     for (const auto& [idMarca, totalVentas] : ventasPorMarca) {
@@ -441,7 +441,7 @@ void FacturaView::generarReporteGanancias() {
     int cantidadCompras = 0;
     double totalCompras = 0.0;
 
-    // Recorrer todas las facturas
+    
     for (const auto& factura : facturaCtrl.listarFacturas()) {
         if (factura->getTipoFactura() == TipoFactura::VENTA) {
             cantidadVentas++;
@@ -452,7 +452,7 @@ void FacturaView::generarReporteGanancias() {
         }
     }
 
-    // Mostrar los resultados
+    
     cout << "\n--- Reporte de Ganancias ---\n";
     cout << "Facturas de Venta:\n";
     cout << "Cantidad: " << cantidadVentas << "\n";
@@ -652,10 +652,10 @@ void FacturaView::mostrarEmpleadoConMasVentasPorMes() {
         return;
     }
 
-    // Mapa para acumular ventas por empleado en el mes dado
+    
     std::unordered_map<int, double> ventasPorEmpleado;
 
-    // Recorrer todas las facturas
+    
     for (const auto& factura : facturaCtrl.listarFacturas()) {
         if (factura->getTipoFactura() == TipoFactura::VENTA) {
             const FechaHora& fh = factura->getFechaHora();
