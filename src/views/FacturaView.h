@@ -7,6 +7,8 @@
 #include "../controllers/ProveedorController.h"
 #include "../controllers/ProductoController.h"
 #include "../controllers/MarcaController.h"
+#include <iostream>
+#include <limits>
 
 class FacturaView {
 public:
@@ -35,6 +37,12 @@ private:
     void generarReporteGanancias();
     void mostrarFacturasDeVentasPorMes();
     void buscarYMostrarFacturaPorId();
+    void mostrarTresMejoresClientes();
+    void mostrarEmpleadoConMasVentasPorMes();
+    void mostrarFacturasCompraPorProveedor();
+    void mostrarPromedioVentasPorMes();
+
+ 
 };
 
 #endif 

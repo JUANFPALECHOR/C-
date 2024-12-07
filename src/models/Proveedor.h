@@ -42,4 +42,4 @@ public:
     std::string tipoCuentaToString() const;
 };
 
-#endif // PROVEEDOR_H
+#endif 

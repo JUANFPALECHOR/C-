@@ -3,6 +3,8 @@
 
 #include "../controllers/StockController.h"
 #include "../controllers/ProductoController.h"
+#include <iostream>
+#include <limits>
 
 class StockView {
 public:
@@ -17,6 +19,7 @@ private:
     void listarStocks();
     void actualizarStock();
     void eliminarStock();
+    void listarProductosBajoStockMinimo();
 };
 
-#endif // STOCK_VIEW_H
+#endif 

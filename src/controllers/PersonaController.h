@@ -1,4 +1,4 @@
-// src/controllers/PersonaController.h
+
 #ifndef PERSONACONTROLLER_H
 #define PERSONACONTROLLER_H
 
@@ -12,9 +12,9 @@ protected:
     std::vector<std::shared_ptr<T>> personas;
 
 public:
-    // Agregar Persona
+    // Agrega la  Persona
     virtual bool agregar(const std::shared_ptr<T>& persona) {
-        // Verificar si el ID ya existe
+        // Verifica si el ID ya existe
         for (const auto& p : personas) {
             if (p->getId() == persona->getId()) {
                 return false; // ID duplicado
@@ -24,7 +24,7 @@ public:
         return true;
     }
 
-    // Obtener Persona por ID
+    // Obtene la Persona por ID
     virtual std::shared_ptr<T> obtenerPorId(int id) const {
         for (const auto& p : personas) {
             if (p->getId() == id) {
@@ -34,7 +34,7 @@ public:
         return nullptr;
     }
 
-    // Actualizar Persona
+    // Actualiza la Persona
     virtual bool actualizar(int id, const std::shared_ptr<T>& personaActualizada) {
         for (auto& p : personas) {
             if (p->getId() == id) {
@@ -62,4 +62,4 @@ public:
     }
 };
 
-#endif // PERSONACONTROLLER_H
+#endif 

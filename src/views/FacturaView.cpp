@@ -35,7 +35,11 @@ void FacturaView::mostrarMenu() {
         cout << "6. Generar Reporte de Ganancias\n";
         cout << "7. Mostrar Facturas de Ventas por Mes\n"; 
         cout << "8. Buscar y Mostrar Factura por ID\n";
-        cout << "9. Volver al Menú Principal\n";
+        cout << "9. Mostrar Top 3 Mejores Clientes por Valor de Compras\n";
+        cout << "10. Mostrar Empleado con Más Ventas por Mes\n";
+        cout << "11. Mostrar Cantidad de Facturas de Compra por Proveedor\n";
+        cout << "12. Mostrar Promedio de Ventas por Mes\n";
+        cout << "13. Volver al Menú Principal\n";
         cout << "Seleccione una opción: ";
         cin >> opcion;
 
@@ -72,13 +76,25 @@ void FacturaView::mostrarMenu() {
                 buscarYMostrarFacturaPorId(); 
                 break;
             case 9:
+                mostrarTresMejoresClientes(); 
+                break;
+            case 10:
+                mostrarEmpleadoConMasVentasPorMes();
+                break;
+            case 11:
+                mostrarFacturasCompraPorProveedor();
+                break;
+            case 12:
+                mostrarPromedioVentasPorMes();
+                break;
+            case 13:
                 cout << "volviendo al menu..\n";
                 break;
             default:
                 cout << "Opción inválida. Por favor, seleccione una opción válida.\n";
                 break;
         }
-    } while(opcion != 9);
+    } while(opcion != 13);
 }
 
 
@@ -486,7 +502,7 @@ void FacturaView::mostrarFacturasDeVentasPorMes() {
         return;
     }
 
-    // Mostrar las facturas filtradas
+    
     cout << "\n--- Facturas de Venta del Mes " << mes << " del Año " << anio << " ---\n";
     cout << "ID\tFecha\t\tHora\t\tValor Total\tID Empleado\tID Cliente\n";
     for (const auto& factura : facturasFiltradas) {
@@ -496,7 +512,7 @@ void FacturaView::mostrarFacturasDeVentasPorMes() {
         int idEmpleado = factura->getIdEmpleado();
         int idCliente = factura->getIdCliente();
 
-        // Formatear fecha y hora
+       
         char fechaStr[11];
         snprintf(fechaStr, sizeof(fechaStr), "%02d/%02d/%04d",
                  fechaHoraFactura.dia, fechaHoraFactura.mes, fechaHoraFactura.año);
@@ -523,7 +539,7 @@ void FacturaView::buscarYMostrarFacturaPorId() {
         return;
     }
 
-    // Obtener la factura desde el controlador
+    
     shared_ptr<Factura> factura = facturaCtrl.obtenerFacturaPorId(idFactura);
 
     if (!factura) {
@@ -531,7 +547,7 @@ void FacturaView::buscarYMostrarFacturaPorId() {
         return;
     }
 
-    // Mostrar los datos de la factura
+    
     cout << "\n--- Detalles de la Factura ---\n";
     cout << "ID Factura: " << factura->getIdFactura() << "\n";
     cout << "Fecha: " << factura->getFechaHora().dia << "/"
@@ -549,7 +565,7 @@ void FacturaView::buscarYMostrarFacturaPorId() {
         cout << "ID Proveedor: " << factura->getIdProveedor() << "\n";
     }
 
-    // Mostrar los detalles de los productos en la factura
+    
     cout << "\n--- Detalles de Productos ---\n";
     cout << "Descripción\tCantidad\tValor Unitario\tSubtotal\n";
 
@@ -562,7 +578,7 @@ void FacturaView::buscarYMostrarFacturaPorId() {
         double subtotal = detalle->calcularSubtotal();
         subtotalFactura += subtotal;
 
-        // Obtener la descripción del producto
+        
         Producto* producto = productoCtrl.obtenerProductoPorId(idProducto);
         string descripcion = producto ? producto->getDescripcionProducto() : "Producto no encontrado";
 
@@ -570,9 +586,173 @@ void FacturaView::buscarYMostrarFacturaPorId() {
              << valorUnitario << "\t\t$" << subtotal << "\n";
     }
 
-    // Mostrar el total de la factura
+    
     double valorTotalFactura = factura->calcularTotal();
 
     cout << "\nSubtotal de la Factura: $" << subtotalFactura << "\n";
     cout << "Valor Total de la Factura: $" << valorTotalFactura << "\n";
+}
+
+void FacturaView::mostrarTresMejoresClientes() {
+    
+    std::unordered_map<int, double> ventasPorCliente;
+
+    
+    for (const auto& factura : facturaCtrl.listarFacturas()) {
+        if (factura->getTipoFactura() == TipoFactura::VENTA) {
+            int idCliente = factura->getIdCliente();
+            ventasPorCliente[idCliente] += factura->calcularTotal();
+        }
+    }
+
+    if (ventasPorCliente.empty()) {
+        std::cout << "No hay ventas registradas.\n";
+        return;
+    }
+
+    
+    std::vector<std::pair<int, double>> clientesOrdenados(ventasPorCliente.begin(), ventasPorCliente.end());
+
+    
+    std::sort(clientesOrdenados.begin(), clientesOrdenados.end(),
+              [](const std::pair<int,double>& a, const std::pair<int,double>& b) {
+                  return a.second > b.second;
+              });
+
+    
+    int cantidad = (int)std::min(clientesOrdenados.size(), (size_t)3);
+
+    std::cout << "\n--- Top " << cantidad << " Mejores Clientes por Valor de Compras ---\n";
+    std::cout << "Pos\tID Cliente\tNombre Cliente\tTotal Compras\n";
+
+    for (int i = 0; i < cantidad; ++i) {
+        int idCliente = clientesOrdenados[i].first;
+        double total = clientesOrdenados[i].second;
+
+        
+        auto cliente = clienteCtrl.obtenerPorId(idCliente); 
+        std::string nombreCliente = (cliente != nullptr) ? cliente->getNombre() : "Desconocido";
+
+        std::cout << (i + 1) << "\t" << idCliente << "\t\t" 
+                  << nombreCliente << "\t\t$" << total << "\n";
+    }
+}
+
+void FacturaView::mostrarEmpleadoConMasVentasPorMes() {
+    int mes, anio;
+    std::cout << "Ingrese el mes (1-12): ";
+    std::cin >> mes;
+    std::cout << "Ingrese el año (e.g., 2023): ";
+    std::cin >> anio;
+
+    if (std::cin.fail() || mes < 1 || mes > 12) {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Entrada inválida. Por favor, ingrese un mes y año válidos.\n";
+        return;
+    }
+
+    // Mapa para acumular ventas por empleado en el mes dado
+    std::unordered_map<int, double> ventasPorEmpleado;
+
+    // Recorrer todas las facturas
+    for (const auto& factura : facturaCtrl.listarFacturas()) {
+        if (factura->getTipoFactura() == TipoFactura::VENTA) {
+            const FechaHora& fh = factura->getFechaHora();
+            if (fh.mes == mes && fh.año == anio) {
+                int idEmpleado = factura->getIdEmpleado();
+                ventasPorEmpleado[idEmpleado] += factura->calcularTotal();
+            }
+        }
+    }
+
+    if (ventasPorEmpleado.empty()) {
+        std::cout << "No hay ventas registradas para el mes " << mes << " del año " << anio << ".\n";
+        return;
+    }
+
+    
+    auto it = std::max_element(ventasPorEmpleado.begin(), ventasPorEmpleado.end(),
+                               [](const std::pair<int,double>& a, const std::pair<int,double>& b) {
+                                   return a.second < b.second;
+                               });
+
+    int idEmpleadoMayor = it->first;
+    double totalMayor = it->second;
+
+    
+    auto empleado = empleadoCtrl.obtenerPorId(idEmpleadoMayor);
+    std::string nombreEmpleado = (empleado != nullptr) ? empleado->getNombre() : "Desconocido";
+
+    std::cout << "\n--- Empleado con más ventas en " << mes << "/" << anio << " ---\n";
+    std::cout << "ID Empleado: " << idEmpleadoMayor << "\n";
+    std::cout << "Nombre Empleado: " << nombreEmpleado << "\n";
+    std::cout << "Total Ventas: $" << totalMayor << "\n";
+}
+
+void FacturaView::mostrarFacturasCompraPorProveedor() {
+    
+    std::unordered_map<int, int> facturasPorProveedor;
+
+    
+    for (const auto& factura : facturaCtrl.listarFacturas()) {
+        if (factura->getTipoFactura() == TipoFactura::COMPRA) {
+            int idProveedor = factura->getIdProveedor();
+            facturasPorProveedor[idProveedor]++;
+        }
+    }
+
+    if (facturasPorProveedor.empty()) {
+        std::cout << "No hay facturas de compra registradas.\n";
+        return;
+    }
+
+    
+    std::cout << "\n--- Cantidad de Facturas de Compra por Proveedor ---\n";
+    std::cout << "ID Proveedor\tNombre Proveedor\tCantidad de Facturas\n";
+
+    for (const auto& par : facturasPorProveedor) {
+        int idProv = par.first;
+        int cantidad = par.second;
+
+        auto proveedor = proveedorCtrl.obtenerPorId(idProv);
+        std::string nombreProveedor = (proveedor != nullptr) ? proveedor->getNombre() : "Desconocido";
+
+        std::cout << idProv << "\t\t" << nombreProveedor << "\t\t" << cantidad << "\n";
+    }
+}
+
+void FacturaView::mostrarPromedioVentasPorMes() {
+    int anio;
+    std::cout << "Ingrese el año (e.g., 2023): ";
+    std::cin >> anio;
+
+    if (std::cin.fail() || anio < 0) {
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::cout << "Entrada inválida. Por favor, ingrese un año válido.\n";
+        return;
+    }
+
+    
+    auto ventasPorMes = facturaCtrl.obtenerVentasPorMes(anio);
+    
+
+    if (ventasPorMes.empty()) {
+        std::cout << "No hay ventas registradas para el año " << anio << ".\n";
+        return;
+    }
+
+    double suma = 0.0;
+    int mesesConVentas = 0;
+
+    for (const auto& [mes, total] : ventasPorMes) {
+        suma += total;
+        mesesConVentas++;
+    }
+
+    double promedio = suma / mesesConVentas;
+
+    std::cout << "\n--- Promedio de Ventas por Mes en el Año " << anio << " ---\n";
+    std::cout << "Promedio: $" << promedio << "\n";
 }

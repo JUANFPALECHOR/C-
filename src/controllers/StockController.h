@@ -30,4 +30,4 @@ public:
 
 };
 
-#endif // STOCKCONTROLLER_H
+#endif 

@@ -1,4 +1,4 @@
-// src/controllers/ClienteController.h
+
 
 #ifndef CLIENTECONTROLLER_H
 #define CLIENTECONTROLLER_H
@@ -28,4 +28,4 @@ public:
     std::shared_ptr<Cliente> obtenerPorId(int id) const;
 };
 
-#endif // CLIENTECONTROLLER_H
+#endif 

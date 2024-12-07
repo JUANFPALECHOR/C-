@@ -12,14 +12,15 @@ StockView::StockView(StockController& stockCtrl, ProductoController& productoCtr
 void StockView::mostrarMenu() {
     int opcion = 0;
     do {
-        cout << "\n--- Gestionar Stock ---\n";
-        cout << "1. Agregar Stock\n";
-        cout << "2. Listar Stocks\n";
-        cout << "3. Actualizar Stock\n";
-        cout << "4. Eliminar Stock\n";
-        cout << "5. Volver al Menú Principal\n";
-        cout << "Seleccione una opción: ";
-        cin >> opcion;
+        std::cout << "\n--- Gestionar Stock ---\n";
+        std::cout << "1. Agregar Stock\n";
+        std::cout << "2. Listar Stock\n";
+        std::cout << "3. Actualizar Stock\n";
+        std::cout << "4. Eliminar Stock\n";
+        std::cout << "5. Mostrar productos con existencia bajo stock mínimo\n";
+        std::cout << "6. Volver al Menú Principal\n";
+        std::cout << "Seleccione una opción: ";
+        std::cin >> opcion;
 
         if (cin.fail()) {
             cin.clear();
@@ -42,13 +43,16 @@ void StockView::mostrarMenu() {
                 eliminarStock();
                 break;
             case 5:
+                listarProductosBajoStockMinimo();
+                break;
+            case 6:
                 cout << "Volviendo al menú principal...\n";
                 break;
             default:
                 cout << "Opción inválida. Por favor, seleccione una opción válida.\n";
                 break;
         }
-    } while (opcion != 5);
+    } while (opcion != 6);
 }
 
 void StockView::agregarStock() {
@@ -197,4 +201,28 @@ void StockView::eliminarStock() {
         return;
     }
 
+}
+
+void StockView::listarProductosBajoStockMinimo() {
+    std::vector<Stock> productosBajoMinimo = stockCtrl.listarBajoStockMinimo();
+
+    if (productosBajoMinimo.empty()) {
+        std::cout << "No hay productos con existencias bajo el stock mínimo.\n";
+        return;
+    }
+
+    std::cout << "\n--- Productos con existencia menor al stock mínimo ---\n";
+    std::cout << "ID Producto\tDescripción\tExistencias\tStock Mínimo\n";
+
+    for (const auto& st : productosBajoMinimo) {
+        int idProd = st.getIdProducto();
+        Producto* prod = productoCtrl.obtenerProductoPorId(idProd);
+
+        std::string descripcion = (prod) ? prod->getDescripcionProducto() : "Producto no encontrado";
+
+        std::cout << idProd << "\t\t" 
+                  << descripcion << "\t\t"
+                  << st.getExistencias() << "\t\t"
+                  << st.getStockMinimo() << "\n";
+    }
 }

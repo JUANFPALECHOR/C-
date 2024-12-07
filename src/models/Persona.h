@@ -1,4 +1,4 @@
-// src/models/Persona.h
+
 
 #ifndef PERSONA_H
 #define PERSONA_H
@@ -38,4 +38,4 @@ public:
     virtual ~Persona() = default;
 };
 
-#endif // PERSONA_H
+#endif 

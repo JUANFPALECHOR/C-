@@ -187,8 +187,8 @@ CMakeFiles/MyProject.dir/src/views/FacturaView.cpp.o: \
  /home/juan/Documentos/c++/src/views/../controllers/ProductoController.h \
  /home/juan/Documentos/c++/src/models/Producto.h \
  /home/juan/Documentos/c++/src/views/../controllers/MarcaController.h \
- /home/juan/Documentos/c++/src/models/Marca.h \
- /home/juan/Documentos/c++/src/utils/Utils.h /usr/include/c++/13/limits \
+ /home/juan/Documentos/c++/src/models/Marca.h /usr/include/c++/13/limits \
+ /home/juan/Documentos/c++/src/utils/Utils.h \
  /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \

@@ -45,3 +45,14 @@ std::vector<std::shared_ptr<Stock>> StockController::listarStocks() const {
 
 
 }
+
+
+std::vector<Stock> StockController::listarBajoStockMinimo() const {
+    std::vector<Stock> bajoStock;
+    for (const auto& s : stocks) {
+        if (s->getExistencias() < s->getStockMinimo()) {
+            bajoStock.push_back(*s);
+        }
+    }
+    return bajoStock;
+}

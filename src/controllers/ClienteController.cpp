@@ -1,9 +1,9 @@
-// src/controllers/ClienteController.cpp
+
 
 #include "ClienteController.h"
 
 bool ClienteController::agregar(const std::shared_ptr<Cliente>& cliente) {
-    // Verificar si ya existe un cliente con el mismo ID
+    // Verifica si ya existe un cliente con el mismo Id
     for(const auto& c : clientes) {
         if(c->getId() == cliente->getId()) {
             return false; // Ya existe
@@ -24,7 +24,7 @@ bool ClienteController::actualizar(int id, const std::shared_ptr<Cliente>& clien
             return true;
         }
     }
-    return false; // No encontrado
+    return false; 
 }
 
 bool ClienteController::eliminar(int id) {
@@ -34,7 +34,7 @@ bool ClienteController::eliminar(int id) {
             return true;
         }
     }
-    return false; // No encontrado
+    return false; 
 }
 
 std::shared_ptr<Cliente> ClienteController::obtenerPorId(int id) const {
@@ -43,5 +43,5 @@ std::shared_ptr<Cliente> ClienteController::obtenerPorId(int id) const {
             return c;
         }
     }
-    return nullptr; // No encontrado
+    return nullptr; 
 }

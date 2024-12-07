@@ -1,4 +1,4 @@
-// src/models/Persona.cpp
+
 
 #include "Persona.h"
 

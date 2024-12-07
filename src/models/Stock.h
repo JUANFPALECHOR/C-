@@ -50,4 +50,4 @@ public:
     // Aquí puedes agregar otros métodos relevantes si es necesario.
 };
 
-#endif // STOCK_H
+#endif 

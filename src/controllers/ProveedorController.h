@@ -1,4 +1,4 @@
-// src/controllers/ProveedorController.h
+
 
 #ifndef PROVEEDORCONTROLLER_H
 #define PROVEEDORCONTROLLER_H
@@ -45,4 +45,4 @@ public:
     bool tieneFacturasAsociadas(int id) const;
 };
 
-#endif // PROVEEDORCONTROLLER_H
+#endif 
